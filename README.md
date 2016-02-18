@@ -1,0 +1,98 @@
+# VersionTracker
+
+[![Travis](https://img.shields.io/travis/recisio/VersionTracker.svg)](https://travis-ci.org/recisio/VersionTracker)
+![Language](https://img.shields.io/badge/language-Swift%202-orange.svg)
+[![CocoaPods](https://img.shields.io/cocoapods/v/VersionTracker.svg?style=flat)](https://github.com/recisio/VersionTracker)
+[![Platform](https://img.shields.io/cocoapods/p/VersionTracker.svg?style=flat)](http://cocoadocs.org/docsets/VersionTracker)
+[![License](https://img.shields.io/cocoapods/l/VersionTracker.svg?style=flat)](http://cocoapods.org/pods/VersionTracker)
+
+
+VersionTracker is a versions / builds tracker to know which version has been installed by a user. 
+
+## Usage
+
+In your ApplicationDelegate, call the method `track` to track the current version:
+
+```swift
+	// iOS / tvOS
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        VersionTracker.track()
+        return true
+    }
+```
+
+```swift
+	// OS X
+    func applicationDidFinishLaunching(aNotification: NSNotification) {
+        VersionTracker.track()
+        return true        
+    }
+
+```
+
+Then, call whenever one of the following methods to get the data you need:
+
+```swift
+static func isFirstLaunchEver() -> Bool
+static func isFirstLaunchForVersion(version: String = "", firstLaunch: Firstlaunch? = nil)
+static func isFirstLaunchForBuild(build: String = "", firstLaunch: Firstlaunch? = nil) -> 
+static func currentVersion() -> String
+static func currentBuild() -> String
+static func previousVersion() -> String?
+static func previousBuild() -> String?
+static func versionHistory() -> [String]
+static func buildHistory() -> [String]
+```
+
+Check out the examples and play with the version / build / number to have a concrete example.
+
+### How it works?
+
+Each time you call the method `track`, the version and build are stored in `NSUserDefaults` if a new version / build is detected. Then, you can access to any information from the tracker.
+
+The version and build number are the information you specify in your app's Info.plist.
+ 
+## Installation
+
+### Cocoapods Installation
+
+VersionTracker is available on CocoaPods. Add the following line in your Podfile:
+
+```
+pod 'VersionTracker'
+```
+
+### Swift Package Manager
+
+VersionTracker is available on SPM. Just add the following to your Package file:
+
+```swift
+import PackageDescription
+
+let package = Package(
+    dependencies: [
+        .Package(url: "https://github.com/recisio/VersionTracker.git", majorVersion: 1)
+    ]
+)
+```
+
+### Manual Installation
+
+Just drag the `Source/*.swift` files into your project.
+ 
+
+## What's next
+
+- [ ] Unit tests
+- Your ideas!
+
+## Contribution
+
+- If you found a **bug**, open an **issue**
+- If you have a **feature request**, open an **issue**
+- If you want to **contribute**, submit a **pull request**
+
+## Licence
+
+VersionTracker is available under the MIT license. See the LICENSE file for more info.
+
