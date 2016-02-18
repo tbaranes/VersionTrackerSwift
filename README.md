@@ -1,13 +1,14 @@
-# VersionTracker
+# VersionTrackerSwift
 
-[![Travis](https://img.shields.io/travis/recisio/VersionTracker.svg)](https://travis-ci.org/recisio/VersionTracker)
+[![Travis](https://img.shields.io/travis/recisio/VersionTrackerSwift.svg)](https://travis-ci.org/recisio/VersionTrackerSwift)
 ![Language](https://img.shields.io/badge/language-Swift%202-orange.svg)
-[![CocoaPods](https://img.shields.io/cocoapods/v/VersionTracker.svg?style=flat)](https://github.com/recisio/VersionTracker)
-[![Platform](https://img.shields.io/cocoapods/p/VersionTracker.svg?style=flat)](http://cocoadocs.org/docsets/VersionTracker)
-[![License](https://img.shields.io/cocoapods/l/VersionTracker.svg?style=flat)](http://cocoapods.org/pods/VersionTracker)
+[![CocoaPods](https://img.shields.io/cocoapods/v/VersionTrackerSwift.svg?style=flat)](https://github.com/recisio/VersionTrackerSwift)
+[![Platform](https://img.shields.io/cocoapods/p/VersionTrackerSwift.svg?style=flat)](http://cocoadocs.org/docsets/VersionTrackerSwift)
+[![License](https://img.shields.io/cocoapods/l/VersionTrackerSwift.svg?style=flat)](http://cocoapods.org/pods/VersionTrackerSwift)
 
+VersionTrackerSwift is a versions / builds tracker to know which version has been installed by a user. 
 
-VersionTracker is a versions / builds tracker to know which version has been installed by a user. 
+![](./assets/demo.png)
 
 ## Usage
 
@@ -56,22 +57,22 @@ The version and build number are the information you specify in your app's Info.
 
 ### Cocoapods Installation
 
-VersionTracker is available on CocoaPods. Add the following line in your Podfile:
+VersionTrackerSwift is available on CocoaPods. Add the following line in your Podfile:
 
 ```
-pod 'VersionTracker'
+pod 'VersionTrackerSwift'
 ```
 
 ### Swift Package Manager
 
-VersionTracker is available on SPM. Just add the following to your Package file:
+VersionTrackerSwift is available on SPM. Just add the following to your Package file:
 
 ```swift
 import PackageDescription
 
 let package = Package(
     dependencies: [
-        .Package(url: "https://github.com/recisio/VersionTracker.git", majorVersion: 1)
+        .Package(url: "https://github.com/recisio/VersionTrackerSwift.git", majorVersion: 1)
     ]
 )
 ```
@@ -94,5 +95,5 @@ Just drag the `Source/*.swift` files into your project.
 
 ## Licence
 
-VersionTracker is available under the MIT license. See the LICENSE file for more info.
+VersionTrackerSwift is available under the MIT license. See the LICENSE file for more info.
 
