@@ -1,8 +1,8 @@
 # VersionTrackerSwift
 
-[![Travis](https://img.shields.io/travis/recisio/VersionTrackerSwift.svg)](https://travis-ci.org/recisio/VersionTrackerSwift)
+[![Travis](https://img.shields.io/travis/tbaranes/VersionTrackerSwift.svg)](https://travis-ci.org/recisio/VersionTrackerSwift)
 ![Language](https://img.shields.io/badge/language-Swift%202-orange.svg)
-[![CocoaPods](https://img.shields.io/cocoapods/v/VersionTrackerSwift.svg?style=flat)](https://github.com/recisio/VersionTrackerSwift)
+[![CocoaPods](https://img.shields.io/cocoapods/v/VersionTrackerSwift.svg?style=flat)](https://github.com/tbaranes/VersionTrackerSwift)
 [![Platform](https://img.shields.io/cocoapods/p/VersionTrackerSwift.svg?style=flat)](http://cocoadocs.org/docsets/VersionTrackerSwift)
 [![License](https://img.shields.io/cocoapods/l/VersionTrackerSwift.svg?style=flat)](http://cocoapods.org/pods/VersionTrackerSwift)
 
@@ -72,7 +72,7 @@ import PackageDescription
 
 let package = Package(
     dependencies: [
-        .Package(url: "https://github.com/recisio/VersionTrackerSwift.git", majorVersion: 1)
+        .Package(url: "https://github.com/tbaranes/VersionTrackerSwift.git", majorVersion: 1)
     ]
 )
 ```
