@@ -17,7 +17,7 @@
                BlueprintIdentifier = "E2712F9A1C7654C00003B6BA"
                BuildableName = "VersionTracker Demo tvOS.app"
                BlueprintName = "VersionTracker Demo tvOS"
-               ReferencedContainer = "container:VersionTracker Demo.xcodeproj">
+               ReferencedContainer = "container:VersionTrackerDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "E2712F9A1C7654C00003B6BA"
             BuildableName = "VersionTracker Demo tvOS.app"
             BlueprintName = "VersionTracker Demo tvOS"
-            ReferencedContainer = "container:VersionTracker Demo.xcodeproj">
+            ReferencedContainer = "container:VersionTrackerDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "E2712F9A1C7654C00003B6BA"
             BuildableName = "VersionTracker Demo tvOS.app"
             BlueprintName = "VersionTracker Demo tvOS"
-            ReferencedContainer = "container:VersionTracker Demo.xcodeproj">
+            ReferencedContainer = "container:VersionTrackerDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,7 +77,7 @@
             BlueprintIdentifier = "E2712F9A1C7654C00003B6BA"
             BuildableName = "VersionTracker Demo tvOS.app"
             BlueprintName = "VersionTracker Demo tvOS"
-            ReferencedContainer = "container:VersionTracker Demo.xcodeproj">
+            ReferencedContainer = "container:VersionTrackerDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

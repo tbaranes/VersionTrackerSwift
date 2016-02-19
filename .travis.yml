@@ -4,17 +4,17 @@ notifications:
   email: false
 env:
   global:
-  - PROJECT="Demo/VersionTracker Demo.xcodeproj"
-  - IOS_SCHEME="VersionTracker iOS Demo"
+  - PROJECT="Demo/VersionTrackerDemo.xcodeproj"
+  - IOS_SCHEME="VersionTracker Demo iOS"
   - OSX_SCHEME="VersionTracker Demo OSX"
   - TVOS_SCHEME="VersionTracker Demo tvOS"
   - IOS_SDK=iphonesimulator9.2
   - OSX_SDK=macosx10.11
   - TVOS_SDK=appletvsimulator9.1
   matrix:
-    - DESTINATION="OS=9.0,name=iPhone 6 Plus"    SCHEME="$IOS_SCHEME"   SDK="$IOS_SDK"   RUN_TESTS="NO" BUILD_EXAMPLE="YES"  POD_LINT="YES"
-    - DESTINATION="OS=9.1,name=iPhone 6S"        SCHEME="$IOS_SCHEME"   SDK="$IOS_SDK"   RUN_TESTS="NO" BUILD_EXAMPLE="YES"  POD_LINT="NO" 
-    - DESTINATION="OS=9.2,name=iPhone 6S Plus"   SCHEME="$IOS_SCHEME"   SDK="$IOS_SDK"   RUN_TESTS="NO" BUILD_EXAMPLE="YES"  POD_LINT="NO" 
+    - DESTINATION="OS=9.0,name=iPhone 6 Plus"    SCHEME="$IOS_SCHEME"   SDK="$IOS_SDK"   RUN_TESTS="NO" BUILD_EXAMPLE="YES" POD_LINT="YES"
+    - DESTINATION="OS=9.1,name=iPhone 6S"        SCHEME="$IOS_SCHEME"   SDK="$IOS_SDK"   RUN_TESTS="NO" BUILD_EXAMPLE="YES" POD_LINT="NO" 
+    - DESTINATION="OS=9.2,name=iPhone 6S Plus"   SCHEME="$IOS_SCHEME"   SDK="$IOS_SDK"   RUN_TESTS="NO" BUILD_EXAMPLE="YES" POD_LINT="NO" 
     - DESTINATION="arch=x86_64"                  SCHEME="$OSX_SCHEME"   SDK="$OSX_SDK"   RUN_TESTS="NO" BUILD_EXAMPLE="YES"  POD_LINT="NO"
     - DESTINATION="OS=9.1,name=Apple TV 1080p"   SCHEME="$TVOS_SCHEME"  SDK="$TVOS_SDK"  RUN_TESTS="NO" BUILD_EXAMPLE="YES"  POD_LINT="NO"
 
