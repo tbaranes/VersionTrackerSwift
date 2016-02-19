@@ -50,7 +50,7 @@
 		E2712FA41C7654C00003B6BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2712FA61C7654C00003B6BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2712FAA1C7658970003B6BA /* MainWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
-		E291593A1C7642BB00852C2B /* VersionTracker iOS Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VersionTracker iOS Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E291593A1C7642BB00852C2B /* VersionTracker Demo iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VersionTracker Demo iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E291593D1C7642BB00852C2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E291593F1C7642BB00852C2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E29159421C7642BB00852C2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 		E291593B1C7642BB00852C2B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E291593A1C7642BB00852C2B /* VersionTracker iOS Demo.app */,
+				E291593A1C7642BB00852C2B /* VersionTracker Demo iOS.app */,
 				E291594E1C7642BB00852C2B /* VersionTrackingTests.xctest */,
 				E2712F8A1C7654AD0003B6BA /* VersionTracker Demo OSX.app */,
 				E2712F9B1C7654C00003B6BA /* VersionTracker Demo tvOS.app */,
@@ -212,9 +212,9 @@
 			productReference = E2712F9B1C7654C00003B6BA /* VersionTracker Demo tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E29159391C7642BB00852C2B /* VersionTracker iOS Demo */ = {
+		E29159391C7642BB00852C2B /* VersionTracker Demo iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E29159571C7642BB00852C2B /* Build configuration list for PBXNativeTarget "VersionTracker iOS Demo" */;
+			buildConfigurationList = E29159571C7642BB00852C2B /* Build configuration list for PBXNativeTarget "VersionTracker Demo iOS" */;
 			buildPhases = (
 				E29159361C7642BB00852C2B /* Sources */,
 				E29159371C7642BB00852C2B /* Frameworks */,
@@ -224,9 +224,9 @@
 			);
 			dependencies = (
 			);
-			name = "VersionTracker iOS Demo";
+			name = "VersionTracker Demo iOS";
 			productName = VersionTracking;
-			productReference = E291593A1C7642BB00852C2B /* VersionTracker iOS Demo.app */;
+			productReference = E291593A1C7642BB00852C2B /* VersionTracker Demo iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E291594D1C7642BB00852C2B /* VersionTrackingTests */ = {
@@ -272,7 +272,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E29159351C7642BB00852C2B /* Build configuration list for PBXProject "VersionTracker Demo" */;
+			buildConfigurationList = E29159351C7642BB00852C2B /* Build configuration list for PBXProject "VersionTrackerDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -285,7 +285,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E29159391C7642BB00852C2B /* VersionTracker iOS Demo */,
+				E29159391C7642BB00852C2B /* VersionTracker Demo iOS */,
 				E2712F891C7654AD0003B6BA /* VersionTracker Demo OSX */,
 				E2712F9A1C7654C00003B6BA /* VersionTracker Demo tvOS */,
 				E291594D1C7642BB00852C2B /* VersionTrackingTests */,
@@ -375,7 +375,7 @@
 /* Begin PBXTargetDependency section */
 		E29159501C7642BB00852C2B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E29159391C7642BB00852C2B /* VersionTracker iOS Demo */;
+			target = E29159391C7642BB00852C2B /* VersionTracker Demo iOS */;
 			targetProxy = E291594F1C7642BB00852C2B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -453,7 +453,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.1;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -466,7 +466,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.1;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -557,6 +557,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "$(SRCROOT)/VersionTracker Demo iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tbaranes.VersionTracking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -567,6 +568,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "$(SRCROOT)/VersionTracker Demo iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tbaranes.VersionTracking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -618,7 +620,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E29159351C7642BB00852C2B /* Build configuration list for PBXProject "VersionTracker Demo" */ = {
+		E29159351C7642BB00852C2B /* Build configuration list for PBXProject "VersionTrackerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E29159551C7642BB00852C2B /* Debug */,
@@ -627,7 +629,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E29159571C7642BB00852C2B /* Build configuration list for PBXNativeTarget "VersionTracker iOS Demo" */ = {
+		E29159571C7642BB00852C2B /* Build configuration list for PBXNativeTarget "VersionTracker Demo iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E29159581C7642BB00852C2B /* Debug */,
