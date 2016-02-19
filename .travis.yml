@@ -4,7 +4,7 @@ notifications:
   email: false
 env:
   global:
-  - PROJECT="Demo/VersionTracker Demo.xcodeproj"
+  - PROJECT=Demo/VersionTracker Demo.xcodeproj
   - IOS_SCHEME="VersionTracker iOS Demo"
   - OSX_SCHEME="VersionTracker Demo OSX"
   - TVOS_SCHEME="VersionTracker Demo tvOS"
