@@ -35,8 +35,8 @@ Then, call whenever one of the following methods to get the data you need:
 
 ```swift
 static func isFirstLaunchEver() -> Bool
-static func isFirstLaunchForVersion(version: String = "", firstLaunch: Firstlaunch? = nil)
-static func isFirstLaunchForBuild(build: String = "", firstLaunch: Firstlaunch? = nil) -> 
+static func isFirstLaunchForVersion(version: String = "", firstLaunch: Firstlaunch? = nil) -> Bool
+static func isFirstLaunchForBuild(build: String = "", firstLaunch: Firstlaunch? = nil) -> Bool
 static func currentVersion() -> String
 static func currentBuild() -> String
 static func previousVersion() -> String?
