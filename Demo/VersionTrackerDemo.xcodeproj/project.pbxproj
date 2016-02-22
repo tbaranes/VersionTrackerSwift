@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E20CB5681C76609700AA9E1D /* VersionTracker Demo iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20CB5671C76609700AA9E1D /* VersionTracker Demo iOS.swift */; };
-		E20CB5691C76609700AA9E1D /* VersionTracker Demo iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20CB5671C76609700AA9E1D /* VersionTracker Demo iOS.swift */; };
-		E20CB56A1C76609700AA9E1D /* VersionTracker Demo iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20CB5671C76609700AA9E1D /* VersionTracker Demo iOS.swift */; };
+		E20CB5681C76609700AA9E1D /* VersionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20CB5671C76609700AA9E1D /* VersionTracker.swift */; };
+		E20CB5691C76609700AA9E1D /* VersionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20CB5671C76609700AA9E1D /* VersionTracker.swift */; };
+		E20CB56A1C76609700AA9E1D /* VersionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20CB5671C76609700AA9E1D /* VersionTracker.swift */; };
 		E2712F8D1C7654AD0003B6BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2712F8C1C7654AD0003B6BA /* AppDelegate.swift */; };
 		E2712F8F1C7654AD0003B6BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2712F8E1C7654AD0003B6BA /* Assets.xcassets */; };
 		E2712F921C7654AD0003B6BA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2712F901C7654AD0003B6BA /* MainMenu.xib */; };
@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E20CB5671C76609700AA9E1D /* VersionTracker Demo iOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VersionTracker Demo iOS.swift"; sourceTree = "<group>"; };
+		E20CB5671C76609700AA9E1D /* VersionTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionTracker.swift; sourceTree = "<group>"; };
 		E2712F8A1C7654AD0003B6BA /* VersionTracker Demo OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VersionTracker Demo OSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2712F8C1C7654AD0003B6BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2712F8E1C7654AD0003B6BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 		E2712F831C76434F0003B6BA /* VersionTracker */ = {
 			isa = PBXGroup;
 			children = (
-				E20CB5671C76609700AA9E1D /* VersionTracker Demo iOS.swift */,
+				E20CB5671C76609700AA9E1D /* VersionTracker.swift */,
 			);
 			name = VersionTracker;
 			path = ../Source;
@@ -337,7 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2712FAB1C7658970003B6BA /* MainWindow.swift in Sources */,
-				E20CB5691C76609700AA9E1D /* VersionTracker Demo iOS.swift in Sources */,
+				E20CB5691C76609700AA9E1D /* VersionTracker.swift in Sources */,
 				E2712F8D1C7654AD0003B6BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,7 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2712FA01C7654C00003B6BA /* ViewController.swift in Sources */,
-				E20CB56A1C76609700AA9E1D /* VersionTracker Demo iOS.swift in Sources */,
+				E20CB56A1C76609700AA9E1D /* VersionTracker.swift in Sources */,
 				E2712F9E1C7654C00003B6BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,7 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E29159401C7642BB00852C2B /* ViewController.swift in Sources */,
-				E20CB5681C76609700AA9E1D /* VersionTracker Demo iOS.swift in Sources */,
+				E20CB5681C76609700AA9E1D /* VersionTracker.swift in Sources */,
 				E291593E1C7642BB00852C2B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
