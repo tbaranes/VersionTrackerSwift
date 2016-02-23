@@ -30,6 +30,9 @@ public struct VersionTracking {
  
     public typealias Firstlaunch = () -> Void
  
+    
+    static var sharedInstance = VersionTracking()
+    
     // MARK: - Tracker
     
     public static func track() {
@@ -114,7 +117,6 @@ public struct VersionTracking {
     private var firstLaunchForVersion: Bool = false
     private var firstLaunchForBuild: Bool = false
     
-    static var sharedInstance = VersionTracking()
     private init() {
         if let versionHistory = NSUserDefaults.standardUserDefaults().dictionaryForKey(kUserDefaultsVersionHistory) as? [String: [String]] {
             versions = versionHistory
