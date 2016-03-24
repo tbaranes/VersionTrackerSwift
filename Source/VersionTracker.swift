@@ -27,9 +27,11 @@ private let kVersionsKey = "kVTVersions"
 private let kBuildsKey = "kVTBuilds"
 
 public struct VersionTracking {
- 
-    public typealias Firstlaunch = () -> Void
- 
+    
+    public typealias FirstLaunch = () -> Void
+    
+    static var sharedInstance = VersionTracking()
+    
     // MARK: - Tracker
     
     public static func track() {
@@ -39,9 +41,8 @@ public struct VersionTracking {
     public static func isFirstLaunchEver() -> Bool {
         return sharedInstance.firstLaunchEver
     }
-
-
-    public static func isFirstLaunchForVersion(version: String = "", firstLaunch: Firstlaunch? = nil) -> Bool {
+    
+    public static func isFirstLaunchForVersion(version: String = "", firstLaunch: FirstLaunch? = nil) -> Bool {
         var isFirstVersion = sharedInstance.firstLaunchForVersion
         if version != "" {
             isFirstVersion = sharedInstance.historyContainsVersion(version)
@@ -52,8 +53,8 @@ public struct VersionTracking {
         }
         return isFirstVersion
     }
-
-    public static func isFirstLaunchForBuild(build: String = "", firstLaunch: Firstlaunch? = nil) -> Bool {
+    
+    public static func isFirstLaunchForBuild(build: String = "", firstLaunch: FirstLaunch? = nil) -> Bool {
         var isFirstBuild = sharedInstance.firstLaunchForBuild
         if build != "" {
             isFirstBuild = sharedInstance.historyContainsBuild(build)
@@ -64,7 +65,7 @@ public struct VersionTracking {
         }
         return isFirstBuild
     }
-
+    
     // MARK: - Version
     
     public static func currentVersion() -> String {
@@ -76,7 +77,7 @@ public struct VersionTracking {
     }
 
     public static func previousVersion() -> String? {
-     return sharedInstance.previousVersion()
+        return sharedInstance.previousVersion()
     }
     
     public static func versionHistory() -> [String] {
@@ -97,7 +98,7 @@ public struct VersionTracking {
     }
     
     public static func previousBuild() -> String? {
-     return sharedInstance.previousBuild()
+        return sharedInstance.previousBuild()
     }
     
     public static func buildHistory() -> [String] {
@@ -114,12 +115,11 @@ public struct VersionTracking {
     private var firstLaunchForVersion: Bool = false
     private var firstLaunchForBuild: Bool = false
     
-    static var sharedInstance = VersionTracking()
     private init() {
         if let versionHistory = NSUserDefaults.standardUserDefaults().dictionaryForKey(kUserDefaultsVersionHistory) as? [String: [String]] {
             versions = versionHistory
         } else {
-            versions = [kVersionsKey: [String](), kBuildsKey: [String](), ]
+            versions = [kVersionsKey: [String](), kBuildsKey: [String]()]
             firstLaunchEver = true
         }
     }
@@ -133,7 +133,7 @@ private extension VersionTracking {
     mutating func startTracking() {
         updateFirstLaunchForVersion()
         updateFirstLaunchForBuild()
-        if firstLaunchForVersion == true || firstLaunchForBuild == true {
+        if firstLaunchForVersion || firstLaunchForBuild {
             NSUserDefaults.standardUserDefaults().setObject(versions, forKey: kUserDefaultsVersionHistory)
             NSUserDefaults.standardUserDefaults().synchronize()
         }
