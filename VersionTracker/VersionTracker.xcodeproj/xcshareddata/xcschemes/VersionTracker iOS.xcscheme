@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E2D4BF271D1E878F007A4E68"
-               BuildableName = "VersionTracker iOS.framework"
+               BuildableName = "VersionTracker.framework"
                BlueprintName = "VersionTracker iOS"
                ReferencedContainer = "container:VersionTracker.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E2D4BF271D1E878F007A4E68"
-            BuildableName = "VersionTracker iOS.framework"
+            BuildableName = "VersionTracker.framework"
             BlueprintName = "VersionTracker iOS"
             ReferencedContainer = "container:VersionTracker.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E2D4BF271D1E878F007A4E68"
-            BuildableName = "VersionTracker iOS.framework"
+            BuildableName = "VersionTracker.framework"
             BlueprintName = "VersionTracker iOS"
             ReferencedContainer = "container:VersionTracker.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E2D4BF271D1E878F007A4E68"
-            BuildableName = "VersionTracker iOS.framework"
+            BuildableName = "VersionTracker.framework"
             BlueprintName = "VersionTracker iOS"
             ReferencedContainer = "container:VersionTracker.xcodeproj">
          </BuildableReference>

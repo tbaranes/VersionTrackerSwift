@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		E2D4BF2C1D1E878F007A4E68 /* VersionTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D4BF2B1D1E878F007A4E68 /* VersionTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E2D4BF331D1E878F007A4E68 /* VersionTracker iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D4BF281D1E878F007A4E68 /* VersionTracker iOS.framework */; };
+		E2D4BF331D1E878F007A4E68 /* VersionTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D4BF281D1E878F007A4E68 /* VersionTracker.framework */; };
 		E2D4BF441D1E87CC007A4E68 /* VersionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D4BF431D1E87CC007A4E68 /* VersionTracker.swift */; };
 		E2D4BF4F1D1E8842007A4E68 /* VersionTracker macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D4BF4E1D1E8842007A4E68 /* VersionTracker macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E2D4BF561D1E8843007A4E68 /* VersionTracker macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D4BF4C1D1E8842007A4E68 /* VersionTracker macOS.framework */; };
+		E2D4BF561D1E8843007A4E68 /* VersionTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D4BF4C1D1E8842007A4E68 /* VersionTracker.framework */; };
 		E2D4BF6B1D1E8893007A4E68 /* VersionTracker tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D4BF6A1D1E8893007A4E68 /* VersionTracker tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E2D4BF721D1E8894007A4E68 /* VersionTracker tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D4BF681D1E8893007A4E68 /* VersionTracker tvOS.framework */; };
-		E2D4BF771D1E8894007A4E68 /* VersionTracker_tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D4BF761D1E8894007A4E68 /* VersionTracker_tvOSTests.swift */; };
+		E2D4BF721D1E8894007A4E68 /* VersionTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D4BF681D1E8893007A4E68 /* VersionTracker.framework */; };
 		E2D4BF871D1E88BC007A4E68 /* VersionTracker watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D4BF861D1E88BC007A4E68 /* VersionTracker watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2D4BF8C1D1E88C5007A4E68 /* VersionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D4BF431D1E87CC007A4E68 /* VersionTracker.swift */; };
 		E2D4BF8D1D1E88C6007A4E68 /* VersionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D4BF431D1E87CC007A4E68 /* VersionTracker.swift */; };
@@ -49,24 +48,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E2D4BF281D1E878F007A4E68 /* VersionTracker iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "VersionTracker iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2D4BF281D1E878F007A4E68 /* VersionTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VersionTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D4BF2B1D1E878F007A4E68 /* VersionTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VersionTracker.h; sourceTree = "<group>"; };
 		E2D4BF2D1D1E878F007A4E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2D4BF321D1E878F007A4E68 /* VersionTracker iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VersionTracker iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D4BF391D1E878F007A4E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2D4BF431D1E87CC007A4E68 /* VersionTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionTracker.swift; sourceTree = "<group>"; };
-		E2D4BF4C1D1E8842007A4E68 /* VersionTracker macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "VersionTracker macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2D4BF4C1D1E8842007A4E68 /* VersionTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VersionTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D4BF4E1D1E8842007A4E68 /* VersionTracker macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VersionTracker macOS.h"; sourceTree = "<group>"; };
 		E2D4BF501D1E8842007A4E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2D4BF551D1E8843007A4E68 /* VersionTracker macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VersionTracker macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D4BF5C1D1E8843007A4E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2D4BF681D1E8893007A4E68 /* VersionTracker tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "VersionTracker tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2D4BF681D1E8893007A4E68 /* VersionTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VersionTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D4BF6A1D1E8893007A4E68 /* VersionTracker tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VersionTracker tvOS.h"; sourceTree = "<group>"; };
 		E2D4BF6C1D1E8893007A4E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2D4BF711D1E8894007A4E68 /* VersionTracker tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VersionTracker tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2D4BF761D1E8894007A4E68 /* VersionTracker_tvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionTracker_tvOSTests.swift; sourceTree = "<group>"; };
 		E2D4BF781D1E8894007A4E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2D4BF841D1E88BC007A4E68 /* VersionTracker watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "VersionTracker watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2D4BF841D1E88BC007A4E68 /* VersionTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VersionTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D4BF861D1E88BC007A4E68 /* VersionTracker watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VersionTracker watchOS.h"; sourceTree = "<group>"; };
 		E2D4BF881D1E88BC007A4E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2D4BF901D1E891D007A4E68 /* VersionTrackerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionTrackerTests.swift; sourceTree = "<group>"; };
@@ -84,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2D4BF331D1E878F007A4E68 /* VersionTracker iOS.framework in Frameworks */,
+				E2D4BF331D1E878F007A4E68 /* VersionTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2D4BF561D1E8843007A4E68 /* VersionTracker macOS.framework in Frameworks */,
+				E2D4BF561D1E8843007A4E68 /* VersionTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2D4BF721D1E8894007A4E68 /* VersionTracker tvOS.framework in Frameworks */,
+				E2D4BF721D1E8894007A4E68 /* VersionTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,13 +142,13 @@
 		E2D4BF291D1E878F007A4E68 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E2D4BF281D1E878F007A4E68 /* VersionTracker iOS.framework */,
+				E2D4BF281D1E878F007A4E68 /* VersionTracker.framework */,
 				E2D4BF321D1E878F007A4E68 /* VersionTracker iOS Tests.xctest */,
-				E2D4BF4C1D1E8842007A4E68 /* VersionTracker macOS.framework */,
+				E2D4BF4C1D1E8842007A4E68 /* VersionTracker.framework */,
 				E2D4BF551D1E8843007A4E68 /* VersionTracker macOSTests.xctest */,
-				E2D4BF681D1E8893007A4E68 /* VersionTracker tvOS.framework */,
+				E2D4BF681D1E8893007A4E68 /* VersionTracker.framework */,
 				E2D4BF711D1E8894007A4E68 /* VersionTracker tvOSTests.xctest */,
-				E2D4BF841D1E88BC007A4E68 /* VersionTracker watchOS.framework */,
+				E2D4BF841D1E88BC007A4E68 /* VersionTracker.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -224,7 +222,6 @@
 		E2D4BF751D1E8894007A4E68 /* VersionTracker tvOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				E2D4BF761D1E8894007A4E68 /* VersionTracker_tvOSTests.swift */,
 				E2D4BF781D1E8894007A4E68 /* Info.plist */,
 			);
 			name = "VersionTracker tvOSTests";
@@ -302,7 +299,7 @@
 			);
 			name = "VersionTracker iOS";
 			productName = VersionTracker;
-			productReference = E2D4BF281D1E878F007A4E68 /* VersionTracker iOS.framework */;
+			productReference = E2D4BF281D1E878F007A4E68 /* VersionTracker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E2D4BF311D1E878F007A4E68 /* VersionTracker iOS Tests */ = {
@@ -339,7 +336,7 @@
 			);
 			name = "VersionTracker macOS";
 			productName = "VersionTracker macOS";
-			productReference = E2D4BF4C1D1E8842007A4E68 /* VersionTracker macOS.framework */;
+			productReference = E2D4BF4C1D1E8842007A4E68 /* VersionTracker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E2D4BF541D1E8843007A4E68 /* VersionTracker macOSTests */ = {
@@ -376,7 +373,7 @@
 			);
 			name = "VersionTracker tvOS";
 			productName = "VersionTracker tvOS";
-			productReference = E2D4BF681D1E8893007A4E68 /* VersionTracker tvOS.framework */;
+			productReference = E2D4BF681D1E8893007A4E68 /* VersionTracker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E2D4BF701D1E8894007A4E68 /* VersionTracker tvOSTests */ = {
@@ -413,7 +410,7 @@
 			);
 			name = "VersionTracker watchOS";
 			productName = "VersionTracker watchOS";
-			productReference = E2D4BF841D1E88BC007A4E68 /* VersionTracker watchOS.framework */;
+			productReference = E2D4BF841D1E88BC007A4E68 /* VersionTracker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -651,7 +648,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2D4BF771D1E8894007A4E68 /* VersionTracker_tvOSTests.swift in Sources */,
 				E2D4BF931D1E891D007A4E68 /* VersionTrackerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -792,7 +788,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tbaranes.VersionTracker;
 				PRODUCT_MODULE_NAME = VersionTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = VersionTracker;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -810,7 +806,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tbaranes.VersionTracker;
 				PRODUCT_MODULE_NAME = VersionTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = VersionTracker;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -857,7 +853,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.VersionTracker-macOS";
 				PRODUCT_MODULE_NAME = VersionTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = VersionTracker;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -880,7 +876,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.VersionTracker-macOS";
 				PRODUCT_MODULE_NAME = VersionTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = VersionTracker;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -932,7 +928,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.VersionTracker-tvOS";
 				PRODUCT_MODULE_NAME = VersionTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = VersionTracker;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -953,7 +949,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.VersionTracker-tvOS";
 				PRODUCT_MODULE_NAME = VersionTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = VersionTracker;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -1001,7 +997,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.VersionTracker-watchOS";
 				PRODUCT_MODULE_NAME = VersionTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = VersionTracker;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -1023,7 +1019,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.VersionTracker-watchOS";
 				PRODUCT_MODULE_NAME = VersionTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = VersionTracker;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -1089,7 +1085,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tbaranes.VersionTracker;
 				PRODUCT_MODULE_NAME = VersionTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = VersionTracker;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -1123,7 +1119,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.VersionTracker-macOS";
 				PRODUCT_MODULE_NAME = VersionTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = VersionTracker;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -1158,7 +1154,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.VersionTracker-tvOS";
 				PRODUCT_MODULE_NAME = VersionTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = VersionTracker;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -1193,7 +1189,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.VersionTracker-watchOS";
 				PRODUCT_MODULE_NAME = VersionTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = VersionTracker;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
