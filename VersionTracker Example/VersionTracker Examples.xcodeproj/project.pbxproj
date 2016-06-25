@@ -23,51 +23,51 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E2D4BFAD1D1E89EE007A4E68 /* PBXContainerItemProxy */ = {
+		E2A494061D1E8EC500B64677 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E2D4BFA31D1E89EE007A4E68 /* VersionTracker.xcodeproj */;
+			containerPortal = E2A493FC1D1E8EC500B64677 /* VersionTracker.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E2D4BF281D1E878F007A4E68;
 			remoteInfo = "VersionTracker iOS";
 		};
-		E2D4BFAF1D1E89EE007A4E68 /* PBXContainerItemProxy */ = {
+		E2A494081D1E8EC500B64677 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E2D4BFA31D1E89EE007A4E68 /* VersionTracker.xcodeproj */;
+			containerPortal = E2A493FC1D1E8EC500B64677 /* VersionTracker.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E2D4BF321D1E878F007A4E68;
 			remoteInfo = "VersionTracker iOS Tests";
 		};
-		E2D4BFB11D1E89EE007A4E68 /* PBXContainerItemProxy */ = {
+		E2A4940A1D1E8EC500B64677 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E2D4BFA31D1E89EE007A4E68 /* VersionTracker.xcodeproj */;
+			containerPortal = E2A493FC1D1E8EC500B64677 /* VersionTracker.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E2D4BF4C1D1E8842007A4E68;
 			remoteInfo = "VersionTracker macOS";
 		};
-		E2D4BFB31D1E89EE007A4E68 /* PBXContainerItemProxy */ = {
+		E2A4940C1D1E8EC500B64677 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E2D4BFA31D1E89EE007A4E68 /* VersionTracker.xcodeproj */;
+			containerPortal = E2A493FC1D1E8EC500B64677 /* VersionTracker.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E2D4BF551D1E8843007A4E68;
 			remoteInfo = "VersionTracker macOSTests";
 		};
-		E2D4BFB51D1E89EE007A4E68 /* PBXContainerItemProxy */ = {
+		E2A4940E1D1E8EC500B64677 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E2D4BFA31D1E89EE007A4E68 /* VersionTracker.xcodeproj */;
+			containerPortal = E2A493FC1D1E8EC500B64677 /* VersionTracker.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E2D4BF681D1E8893007A4E68;
 			remoteInfo = "VersionTracker tvOS";
 		};
-		E2D4BFB71D1E89EE007A4E68 /* PBXContainerItemProxy */ = {
+		E2A494101D1E8EC500B64677 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E2D4BFA31D1E89EE007A4E68 /* VersionTracker.xcodeproj */;
+			containerPortal = E2A493FC1D1E8EC500B64677 /* VersionTracker.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E2D4BF711D1E8894007A4E68;
 			remoteInfo = "VersionTracker tvOSTests";
 		};
-		E2D4BFB91D1E89EE007A4E68 /* PBXContainerItemProxy */ = {
+		E2A494121D1E8EC500B64677 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E2D4BFA31D1E89EE007A4E68 /* VersionTracker.xcodeproj */;
+			containerPortal = E2A493FC1D1E8EC500B64677 /* VersionTracker.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E2D4BF841D1E88BC007A4E68;
 			remoteInfo = "VersionTracker watchOS";
@@ -94,7 +94,7 @@
 		E29159441C7642BB00852C2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E29159471C7642BB00852C2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E29159491C7642BB00852C2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2D4BFA31D1E89EE007A4E68 /* VersionTracker.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VersionTracker.xcodeproj; path = ../VersionTracker/VersionTracker.xcodeproj; sourceTree = "<group>"; };
+		E2A493FC1D1E8EC500B64677 /* VersionTracker.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VersionTracker.xcodeproj; path = ../VersionTracker/VersionTracker.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +153,7 @@
 				E2712F8B1C7654AD0003B6BA /* macOS Example */,
 				E2712F9C1C7654C00003B6BA /* tvOS Example */,
 				E291593B1C7642BB00852C2B /* Products */,
-				E2D4BFA31D1E89EE007A4E68 /* VersionTracker.xcodeproj */,
+				E2A493FC1D1E8EC500B64677 /* VersionTracker.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,16 +180,16 @@
 			path = "iOS Example";
 			sourceTree = "<group>";
 		};
-		E2D4BFA41D1E89EE007A4E68 /* Products */ = {
+		E2A493FD1D1E8EC500B64677 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E2D4BFAE1D1E89EE007A4E68 /* VersionTracker iOS.framework */,
-				E2D4BFB01D1E89EE007A4E68 /* VersionTracker iOS Tests.xctest */,
-				E2D4BFB21D1E89EE007A4E68 /* VersionTracker macOS.framework */,
-				E2D4BFB41D1E89EE007A4E68 /* VersionTracker macOSTests.xctest */,
-				E2D4BFB61D1E89EE007A4E68 /* VersionTracker tvOS.framework */,
-				E2D4BFB81D1E89EE007A4E68 /* VersionTracker tvOSTests.xctest */,
-				E2D4BFBA1D1E89EE007A4E68 /* VersionTracker watchOS.framework */,
+				E2A494071D1E8EC500B64677 /* VersionTracker.framework */,
+				E2A494091D1E8EC500B64677 /* VersionTracker iOS Tests.xctest */,
+				E2A4940B1D1E8EC500B64677 /* VersionTracker.framework */,
+				E2A4940D1D1E8EC500B64677 /* VersionTracker macOSTests.xctest */,
+				E2A4940F1D1E8EC500B64677 /* VersionTracker.framework */,
+				E2A494111D1E8EC500B64677 /* VersionTracker tvOSTests.xctest */,
+				E2A494131D1E8EC500B64677 /* VersionTracker.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -282,8 +282,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = E2D4BFA41D1E89EE007A4E68 /* Products */;
-					ProjectRef = E2D4BFA31D1E89EE007A4E68 /* VersionTracker.xcodeproj */;
+					ProductGroup = E2A493FD1D1E8EC500B64677 /* Products */;
+					ProjectRef = E2A493FC1D1E8EC500B64677 /* VersionTracker.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -296,53 +296,53 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		E2D4BFAE1D1E89EE007A4E68 /* VersionTracker iOS.framework */ = {
+		E2A494071D1E8EC500B64677 /* VersionTracker.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = "VersionTracker iOS.framework";
-			remoteRef = E2D4BFAD1D1E89EE007A4E68 /* PBXContainerItemProxy */;
+			path = VersionTracker.framework;
+			remoteRef = E2A494061D1E8EC500B64677 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E2D4BFB01D1E89EE007A4E68 /* VersionTracker iOS Tests.xctest */ = {
+		E2A494091D1E8EC500B64677 /* VersionTracker iOS Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "VersionTracker iOS Tests.xctest";
-			remoteRef = E2D4BFAF1D1E89EE007A4E68 /* PBXContainerItemProxy */;
+			remoteRef = E2A494081D1E8EC500B64677 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E2D4BFB21D1E89EE007A4E68 /* VersionTracker macOS.framework */ = {
+		E2A4940B1D1E8EC500B64677 /* VersionTracker.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = "VersionTracker macOS.framework";
-			remoteRef = E2D4BFB11D1E89EE007A4E68 /* PBXContainerItemProxy */;
+			path = VersionTracker.framework;
+			remoteRef = E2A4940A1D1E8EC500B64677 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E2D4BFB41D1E89EE007A4E68 /* VersionTracker macOSTests.xctest */ = {
+		E2A4940D1D1E8EC500B64677 /* VersionTracker macOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "VersionTracker macOSTests.xctest";
-			remoteRef = E2D4BFB31D1E89EE007A4E68 /* PBXContainerItemProxy */;
+			remoteRef = E2A4940C1D1E8EC500B64677 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E2D4BFB61D1E89EE007A4E68 /* VersionTracker tvOS.framework */ = {
+		E2A4940F1D1E8EC500B64677 /* VersionTracker.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = "VersionTracker tvOS.framework";
-			remoteRef = E2D4BFB51D1E89EE007A4E68 /* PBXContainerItemProxy */;
+			path = VersionTracker.framework;
+			remoteRef = E2A4940E1D1E8EC500B64677 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E2D4BFB81D1E89EE007A4E68 /* VersionTracker tvOSTests.xctest */ = {
+		E2A494111D1E8EC500B64677 /* VersionTracker tvOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "VersionTracker tvOSTests.xctest";
-			remoteRef = E2D4BFB71D1E89EE007A4E68 /* PBXContainerItemProxy */;
+			remoteRef = E2A494101D1E8EC500B64677 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E2D4BFBA1D1E89EE007A4E68 /* VersionTracker watchOS.framework */ = {
+		E2A494131D1E8EC500B64677 /* VersionTracker.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = "VersionTracker watchOS.framework";
-			remoteRef = E2D4BFB91D1E89EE007A4E68 /* PBXContainerItemProxy */;
+			path = VersionTracker.framework;
+			remoteRef = E2A494121D1E8EC500B64677 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -452,7 +452,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/macOS Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.VersionTracking-Demo-OSX";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.VersionTracker-macOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -466,7 +466,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/macOS Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.VersionTracking-Demo-OSX";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.VersionTracker-macOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -478,7 +478,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = "$(SRCROOT)/tvOS Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.VersionTracking-Demo-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.VersionTracker-tvOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -491,7 +491,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = "$(SRCROOT)/tvOS Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.VersionTracking-Demo-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.VersionTracker-tvOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -589,7 +589,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/iOS Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tbaranes.VersionTracking;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.VersionTracker-iOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -600,7 +600,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/iOS Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tbaranes.VersionTracking;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.VersionTracker-iOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};

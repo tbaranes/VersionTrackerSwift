@@ -1,12 +1,13 @@
 //
 //  ViewController.swift
-//  VersionTracking
+//  VersionTracker
 //
 //  Created by Tom Baranes on 18/02/16.
 //  Copyright © 2016 Tom Baranes. All rights reserved.
 //
 
 import UIKit
+import VersionTrackerSwift
 
 class ViewController: UIViewController {
 
@@ -24,18 +25,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        labelVersion.text = "Current version: " + VersionTracking.currentVersion()
-        labelBuild.text = "Current build: " + VersionTracking.currentBuild()
-        labelVersionHistory.text = "Version history: " + VersionTracking.versionHistory().description
-        labelBuildHistory.text = "Build history: " + VersionTracking.buildHistory().description
+        labelVersion.text = "Current version: " + VersionTracker.currentVersion()
+        labelBuild.text = "Current build: " + VersionTracker.currentBuild()
+        labelVersionHistory.text = "Version history: " + VersionTracker.versionHistory().description
+        labelBuildHistory.text = "Build history: " + VersionTracker.buildHistory().description
 
-        if let previousVersion = VersionTracking.previousVersion() {
+        if let previousVersion = VersionTracker.previousVersion() {
             labelPreviousVersion.text = "Previous version: " + previousVersion
         } else {
             labelPreviousVersion.text = "Previous version: first version"
         }
 
-        if let previousBuild = VersionTracking.previousBuild() {
+        if let previousBuild = VersionTracker.previousBuild() {
             labelPreviousBuild.text = "Previous build: " + previousBuild
         } else {
             labelPreviousBuild.text = "Previous build: first build"

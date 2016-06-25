@@ -1,4 +1,4 @@
-// VersionTracking.swift
+// VersionTracker.swift
 //
 // Copyright (c) 2016 Tom Baranes
 //
@@ -26,7 +26,7 @@ private let kUserDefaultsVersionHistory = "kVTVersionHistory"
 private let kVersionsKey = "kVTVersions"
 private let kBuildsKey = "kVTBuilds"
 
-public struct VersionTracking {
+public struct VersionTracker {
     
     public typealias FirstLaunch = () -> Void
 
@@ -39,7 +39,7 @@ public struct VersionTracking {
 
     // MARK: Singleton
 
-    static var sharedInstance = VersionTracking()
+    static var sharedInstance = VersionTracker()
 
     private init() {
         if let versionHistory = UserDefaults.standard().dictionary(forKey: kUserDefaultsVersionHistory) as? [String: [String]] {
@@ -128,7 +128,7 @@ public struct VersionTracking {
 
 }
 
-private extension VersionTracking {
+private extension VersionTracker {
     
     // MARK: - Initializer
     
@@ -142,7 +142,7 @@ private extension VersionTracking {
     }
     
     mutating func updateFirstLaunchForVersion() {
-        let currentVersion = VersionTracking.currentVersion()
+        let currentVersion = VersionTracker.currentVersion()
         if versions[kVersionsKey]?.contains(currentVersion) == false {
             versions[kVersionsKey]?.append(currentVersion)
             firstLaunchForVersion = true
@@ -150,7 +150,7 @@ private extension VersionTracking {
     }
     
     mutating func updateFirstLaunchForBuild() {
-        let currentBuild = VersionTracking.currentBuild()
+        let currentBuild = VersionTracker.currentBuild()
         if versions[kBuildsKey]?.contains(currentBuild) == false {
             versions[kBuildsKey]?.append(currentBuild)
             firstLaunchForBuild = true

@@ -1,12 +1,13 @@
 //
 //  MainWindow.swift
-//  VersionTracking Demo
+//  VersionTracker Demo
 //
 //  Created by Tom Baranes on 18/02/16.
 //  Copyright © 2016 Tom Baranes. All rights reserved.
 //
 
 import Cocoa
+import VersionTrackerSwift
 
 class MainWindow: NSWindow {
 
@@ -24,18 +25,18 @@ class MainWindow: NSWindow {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Do any additional setup after loading the view, typically from a nib.
-        labelVersion.stringValue = "Current version: " + VersionTracking.currentVersion()
-        labelBuild.stringValue = "Current build: " + VersionTracking.currentBuild()
-        labelVersionHistory.stringValue = "Version history: " + VersionTracking.versionHistory().description
-        labelBuildHistory.stringValue = "Build history: " + VersionTracking.buildHistory().description
+        labelVersion.stringValue = "Current version: " + VersionTracker.currentVersion()
+        labelBuild.stringValue = "Current build: " + VersionTracker.currentBuild()
+        labelVersionHistory.stringValue = "Version history: " + VersionTracker.versionHistory().description
+        labelBuildHistory.stringValue = "Build history: " + VersionTracker.buildHistory().description
         
-        if let previousVersion = VersionTracking.previousVersion() {
+        if let previousVersion = VersionTracker.previousVersion() {
             labelPreviousVersion.stringValue = "Previous version: " + previousVersion
         } else {
             labelPreviousVersion.stringValue = "Previous version: first version"
         }
         
-        if let previousBuild = VersionTracking.previousBuild() {
+        if let previousBuild = VersionTracker.previousBuild() {
             labelPreviousBuild.stringValue = "Previous build: " + previousBuild
         } else {
             labelPreviousBuild.stringValue = "Previous build: first build"
