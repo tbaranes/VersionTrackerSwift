@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E20CB5681C76609700AA9E1D /* VersionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20CB5671C76609700AA9E1D /* VersionTracker.swift */; };
-		E20CB5691C76609700AA9E1D /* VersionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20CB5671C76609700AA9E1D /* VersionTracker.swift */; };
-		E20CB56A1C76609700AA9E1D /* VersionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20CB5671C76609700AA9E1D /* VersionTracker.swift */; };
 		E2712F8D1C7654AD0003B6BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2712F8C1C7654AD0003B6BA /* AppDelegate.swift */; };
 		E2712F8F1C7654AD0003B6BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2712F8E1C7654AD0003B6BA /* Assets.xcassets */; };
 		E2712F921C7654AD0003B6BA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2712F901C7654AD0003B6BA /* MainMenu.xib */; };
@@ -23,43 +20,81 @@
 		E29159431C7642BB00852C2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29159411C7642BB00852C2B /* Main.storyboard */; };
 		E29159451C7642BB00852C2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E29159441C7642BB00852C2B /* Assets.xcassets */; };
 		E29159481C7642BB00852C2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29159461C7642BB00852C2B /* LaunchScreen.storyboard */; };
-		E29159531C7642BB00852C2B /* VersionTrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29159521C7642BB00852C2B /* VersionTrackingTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E291594F1C7642BB00852C2B /* PBXContainerItemProxy */ = {
+		E2D4BFAD1D1E89EE007A4E68 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E29159321C7642BB00852C2B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E29159391C7642BB00852C2B;
-			remoteInfo = VersionTracking;
+			containerPortal = E2D4BFA31D1E89EE007A4E68 /* VersionTracker.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E2D4BF281D1E878F007A4E68;
+			remoteInfo = "VersionTracker iOS";
+		};
+		E2D4BFAF1D1E89EE007A4E68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D4BFA31D1E89EE007A4E68 /* VersionTracker.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E2D4BF321D1E878F007A4E68;
+			remoteInfo = "VersionTracker iOS Tests";
+		};
+		E2D4BFB11D1E89EE007A4E68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D4BFA31D1E89EE007A4E68 /* VersionTracker.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E2D4BF4C1D1E8842007A4E68;
+			remoteInfo = "VersionTracker macOS";
+		};
+		E2D4BFB31D1E89EE007A4E68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D4BFA31D1E89EE007A4E68 /* VersionTracker.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E2D4BF551D1E8843007A4E68;
+			remoteInfo = "VersionTracker macOSTests";
+		};
+		E2D4BFB51D1E89EE007A4E68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D4BFA31D1E89EE007A4E68 /* VersionTracker.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E2D4BF681D1E8893007A4E68;
+			remoteInfo = "VersionTracker tvOS";
+		};
+		E2D4BFB71D1E89EE007A4E68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D4BFA31D1E89EE007A4E68 /* VersionTracker.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E2D4BF711D1E8894007A4E68;
+			remoteInfo = "VersionTracker tvOSTests";
+		};
+		E2D4BFB91D1E89EE007A4E68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D4BFA31D1E89EE007A4E68 /* VersionTracker.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E2D4BF841D1E88BC007A4E68;
+			remoteInfo = "VersionTracker watchOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E20CB5671C76609700AA9E1D /* VersionTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionTracker.swift; sourceTree = "<group>"; };
-		E2712F8A1C7654AD0003B6BA /* VersionTracker Demo OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VersionTracker Demo OSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2712F8A1C7654AD0003B6BA /* macOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "macOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2712F8C1C7654AD0003B6BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2712F8E1C7654AD0003B6BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2712F911C7654AD0003B6BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E2712F931C7654AD0003B6BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2712F9B1C7654C00003B6BA /* VersionTracker Demo tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VersionTracker Demo tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2712F9B1C7654C00003B6BA /* tvOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2712F9D1C7654C00003B6BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2712F9F1C7654C00003B6BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E2712FA21C7654C00003B6BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2712FA41C7654C00003B6BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2712FA61C7654C00003B6BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2712FAA1C7658970003B6BA /* MainWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
-		E291593A1C7642BB00852C2B /* VersionTracker Demo iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VersionTracker Demo iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E291593A1C7642BB00852C2B /* iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E291593D1C7642BB00852C2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E291593F1C7642BB00852C2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E29159421C7642BB00852C2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E29159441C7642BB00852C2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E29159471C7642BB00852C2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E29159491C7642BB00852C2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E291594E1C7642BB00852C2B /* VersionTrackingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VersionTrackingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E29159521C7642BB00852C2B /* VersionTrackingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionTrackingTests.swift; sourceTree = "<group>"; };
-		E29159541C7642BB00852C2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2D4BFA31D1E89EE007A4E68 /* VersionTracker.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VersionTracker.xcodeproj; path = ../VersionTracker/VersionTracker.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,26 +119,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E291594B1C7642BB00852C2B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E2712F831C76434F0003B6BA /* VersionTracker */ = {
-			isa = PBXGroup;
-			children = (
-				E20CB5671C76609700AA9E1D /* VersionTracker.swift */,
-			);
-			name = VersionTracker;
-			path = ../Source;
-			sourceTree = "<group>";
-		};
-		E2712F8B1C7654AD0003B6BA /* VersionTracker Demo OSX */ = {
+		E2712F8B1C7654AD0003B6BA /* macOS Example */ = {
 			isa = PBXGroup;
 			children = (
 				E2712F8C1C7654AD0003B6BA /* AppDelegate.swift */,
@@ -112,11 +131,10 @@
 				E2712F901C7654AD0003B6BA /* MainMenu.xib */,
 				E2712F931C7654AD0003B6BA /* Info.plist */,
 			);
-			name = "VersionTracker Demo OSX";
-			path = "VersionTracker Demo iOS Demo OSX";
+			path = "macOS Example";
 			sourceTree = "<group>";
 		};
-		E2712F9C1C7654C00003B6BA /* VersionTracker Demo tvOS */ = {
+		E2712F9C1C7654C00003B6BA /* tvOS Example */ = {
 			isa = PBXGroup;
 			children = (
 				E2712F9D1C7654C00003B6BA /* AppDelegate.swift */,
@@ -125,34 +143,31 @@
 				E2712FA41C7654C00003B6BA /* Assets.xcassets */,
 				E2712FA61C7654C00003B6BA /* Info.plist */,
 			);
-			name = "VersionTracker Demo tvOS";
-			path = "VersionTracker Demo iOS Demo tvOS";
+			path = "tvOS Example";
 			sourceTree = "<group>";
 		};
 		E29159311C7642BB00852C2B = {
 			isa = PBXGroup;
 			children = (
-				E2712F831C76434F0003B6BA /* VersionTracker */,
-				E291593C1C7642BB00852C2B /* VersionTracker Demo iOS */,
-				E2712F8B1C7654AD0003B6BA /* VersionTracker Demo OSX */,
-				E2712F9C1C7654C00003B6BA /* VersionTracker Demo tvOS */,
-				E29159511C7642BB00852C2B /* VersionTracker Demo iOSDemoTests */,
+				E291593C1C7642BB00852C2B /* iOS Example */,
+				E2712F8B1C7654AD0003B6BA /* macOS Example */,
+				E2712F9C1C7654C00003B6BA /* tvOS Example */,
 				E291593B1C7642BB00852C2B /* Products */,
+				E2D4BFA31D1E89EE007A4E68 /* VersionTracker.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
 		E291593B1C7642BB00852C2B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E291593A1C7642BB00852C2B /* VersionTracker Demo iOS.app */,
-				E291594E1C7642BB00852C2B /* VersionTrackingTests.xctest */,
-				E2712F8A1C7654AD0003B6BA /* VersionTracker Demo OSX.app */,
-				E2712F9B1C7654C00003B6BA /* VersionTracker Demo tvOS.app */,
+				E291593A1C7642BB00852C2B /* iOS Example.app */,
+				E2712F8A1C7654AD0003B6BA /* macOS Example.app */,
+				E2712F9B1C7654C00003B6BA /* tvOS Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E291593C1C7642BB00852C2B /* VersionTracker Demo iOS */ = {
+		E291593C1C7642BB00852C2B /* iOS Example */ = {
 			isa = PBXGroup;
 			children = (
 				E291593D1C7642BB00852C2B /* AppDelegate.swift */,
@@ -162,25 +177,29 @@
 				E29159461C7642BB00852C2B /* LaunchScreen.storyboard */,
 				E29159491C7642BB00852C2B /* Info.plist */,
 			);
-			path = "VersionTracker Demo iOS";
+			path = "iOS Example";
 			sourceTree = "<group>";
 		};
-		E29159511C7642BB00852C2B /* VersionTracker Demo iOSDemoTests */ = {
+		E2D4BFA41D1E89EE007A4E68 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E29159521C7642BB00852C2B /* VersionTrackingTests.swift */,
-				E29159541C7642BB00852C2B /* Info.plist */,
+				E2D4BFAE1D1E89EE007A4E68 /* VersionTracker iOS.framework */,
+				E2D4BFB01D1E89EE007A4E68 /* VersionTracker iOS Tests.xctest */,
+				E2D4BFB21D1E89EE007A4E68 /* VersionTracker macOS.framework */,
+				E2D4BFB41D1E89EE007A4E68 /* VersionTracker macOSTests.xctest */,
+				E2D4BFB61D1E89EE007A4E68 /* VersionTracker tvOS.framework */,
+				E2D4BFB81D1E89EE007A4E68 /* VersionTracker tvOSTests.xctest */,
+				E2D4BFBA1D1E89EE007A4E68 /* VersionTracker watchOS.framework */,
 			);
-			name = "VersionTracker Demo iOSDemoTests";
-			path = VersionTrackingDemoTests;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E2712F891C7654AD0003B6BA /* VersionTracker Demo OSX */ = {
+		E2712F891C7654AD0003B6BA /* macOS Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2712F941C7654AD0003B6BA /* Build configuration list for PBXNativeTarget "VersionTracker Demo OSX" */;
+			buildConfigurationList = E2712F941C7654AD0003B6BA /* Build configuration list for PBXNativeTarget "macOS Example" */;
 			buildPhases = (
 				E2712F861C7654AD0003B6BA /* Sources */,
 				E2712F871C7654AD0003B6BA /* Frameworks */,
@@ -190,14 +209,14 @@
 			);
 			dependencies = (
 			);
-			name = "VersionTracker Demo OSX";
+			name = "macOS Example";
 			productName = "VersionTracking Demo OSX";
-			productReference = E2712F8A1C7654AD0003B6BA /* VersionTracker Demo OSX.app */;
+			productReference = E2712F8A1C7654AD0003B6BA /* macOS Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E2712F9A1C7654C00003B6BA /* VersionTracker Demo tvOS */ = {
+		E2712F9A1C7654C00003B6BA /* tvOS Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2712FA71C7654C00003B6BA /* Build configuration list for PBXNativeTarget "VersionTracker Demo tvOS" */;
+			buildConfigurationList = E2712FA71C7654C00003B6BA /* Build configuration list for PBXNativeTarget "tvOS Example" */;
 			buildPhases = (
 				E2712F971C7654C00003B6BA /* Sources */,
 				E2712F981C7654C00003B6BA /* Frameworks */,
@@ -207,14 +226,14 @@
 			);
 			dependencies = (
 			);
-			name = "VersionTracker Demo tvOS";
+			name = "tvOS Example";
 			productName = "VersionTracking Demo tvOS";
-			productReference = E2712F9B1C7654C00003B6BA /* VersionTracker Demo tvOS.app */;
+			productReference = E2712F9B1C7654C00003B6BA /* tvOS Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E29159391C7642BB00852C2B /* VersionTracker Demo iOS */ = {
+		E29159391C7642BB00852C2B /* iOS Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E29159571C7642BB00852C2B /* Build configuration list for PBXNativeTarget "VersionTracker Demo iOS" */;
+			buildConfigurationList = E29159571C7642BB00852C2B /* Build configuration list for PBXNativeTarget "iOS Example" */;
 			buildPhases = (
 				E29159361C7642BB00852C2B /* Sources */,
 				E29159371C7642BB00852C2B /* Frameworks */,
@@ -224,28 +243,10 @@
 			);
 			dependencies = (
 			);
-			name = "VersionTracker Demo iOS";
+			name = "iOS Example";
 			productName = VersionTracking;
-			productReference = E291593A1C7642BB00852C2B /* VersionTracker Demo iOS.app */;
+			productReference = E291593A1C7642BB00852C2B /* iOS Example.app */;
 			productType = "com.apple.product-type.application";
-		};
-		E291594D1C7642BB00852C2B /* VersionTrackingTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E291595A1C7642BB00852C2B /* Build configuration list for PBXNativeTarget "VersionTrackingTests" */;
-			buildPhases = (
-				E291594A1C7642BB00852C2B /* Sources */,
-				E291594B1C7642BB00852C2B /* Frameworks */,
-				E291594C1C7642BB00852C2B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E29159501C7642BB00852C2B /* PBXTargetDependency */,
-			);
-			name = VersionTrackingTests;
-			productName = VersionTrackingTests;
-			productReference = E291594E1C7642BB00852C2B /* VersionTrackingTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -266,13 +267,9 @@
 					E29159391C7642BB00852C2B = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
-					E291594D1C7642BB00852C2B = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = E29159391C7642BB00852C2B;
-					};
 				};
 			};
-			buildConfigurationList = E29159351C7642BB00852C2B /* Build configuration list for PBXProject "VersionTrackerDemo" */;
+			buildConfigurationList = E29159351C7642BB00852C2B /* Build configuration list for PBXProject "VersionTracker Examples" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -283,15 +280,72 @@
 			mainGroup = E29159311C7642BB00852C2B;
 			productRefGroup = E291593B1C7642BB00852C2B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E2D4BFA41D1E89EE007A4E68 /* Products */;
+					ProjectRef = E2D4BFA31D1E89EE007A4E68 /* VersionTracker.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				E29159391C7642BB00852C2B /* VersionTracker Demo iOS */,
-				E2712F891C7654AD0003B6BA /* VersionTracker Demo OSX */,
-				E2712F9A1C7654C00003B6BA /* VersionTracker Demo tvOS */,
-				E291594D1C7642BB00852C2B /* VersionTrackingTests */,
+				E29159391C7642BB00852C2B /* iOS Example */,
+				E2712F891C7654AD0003B6BA /* macOS Example */,
+				E2712F9A1C7654C00003B6BA /* tvOS Example */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E2D4BFAE1D1E89EE007A4E68 /* VersionTracker iOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = "VersionTracker iOS.framework";
+			remoteRef = E2D4BFAD1D1E89EE007A4E68 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E2D4BFB01D1E89EE007A4E68 /* VersionTracker iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "VersionTracker iOS Tests.xctest";
+			remoteRef = E2D4BFAF1D1E89EE007A4E68 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E2D4BFB21D1E89EE007A4E68 /* VersionTracker macOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = "VersionTracker macOS.framework";
+			remoteRef = E2D4BFB11D1E89EE007A4E68 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E2D4BFB41D1E89EE007A4E68 /* VersionTracker macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "VersionTracker macOSTests.xctest";
+			remoteRef = E2D4BFB31D1E89EE007A4E68 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E2D4BFB61D1E89EE007A4E68 /* VersionTracker tvOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = "VersionTracker tvOS.framework";
+			remoteRef = E2D4BFB51D1E89EE007A4E68 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E2D4BFB81D1E89EE007A4E68 /* VersionTracker tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "VersionTracker tvOSTests.xctest";
+			remoteRef = E2D4BFB71D1E89EE007A4E68 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E2D4BFBA1D1E89EE007A4E68 /* VersionTracker watchOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = "VersionTracker watchOS.framework";
+			remoteRef = E2D4BFB91D1E89EE007A4E68 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E2712F881C7654AD0003B6BA /* Resources */ = {
@@ -322,13 +376,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E291594C1C7642BB00852C2B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -337,7 +384,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2712FAB1C7658970003B6BA /* MainWindow.swift in Sources */,
-				E20CB5691C76609700AA9E1D /* VersionTracker.swift in Sources */,
 				E2712F8D1C7654AD0003B6BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,7 +393,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2712FA01C7654C00003B6BA /* ViewController.swift in Sources */,
-				E20CB56A1C76609700AA9E1D /* VersionTracker.swift in Sources */,
 				E2712F9E1C7654C00003B6BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,28 +402,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E29159401C7642BB00852C2B /* ViewController.swift in Sources */,
-				E20CB5681C76609700AA9E1D /* VersionTracker.swift in Sources */,
 				E291593E1C7642BB00852C2B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E291594A1C7642BB00852C2B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E29159531C7642BB00852C2B /* VersionTrackingTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E29159501C7642BB00852C2B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E29159391C7642BB00852C2B /* VersionTracker Demo iOS */;
-			targetProxy = E291594F1C7642BB00852C2B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E2712F901C7654AD0003B6BA /* MainMenu.xib */ = {
@@ -421,7 +449,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/VersionTracker Demo iOS Demo OSX/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/macOS Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.VersionTracking-Demo-OSX";
@@ -435,7 +463,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/VersionTracker Demo iOS Demo OSX/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/macOS Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.VersionTracking-Demo-OSX";
@@ -447,7 +475,7 @@
 		E2712FA81C7654C00003B6BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "$(SRCROOT)/VersionTracker Demo iOS Demo tvOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/tvOS Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.VersionTracking-Demo-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -460,7 +488,7 @@
 		E2712FA91C7654C00003B6BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "$(SRCROOT)/VersionTracker Demo iOS Demo tvOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/tvOS Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.VersionTracking-Demo-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -556,7 +584,7 @@
 		E29159581C7642BB00852C2B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "$(SRCROOT)/VersionTracker Demo iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/iOS Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tbaranes.VersionTracking;
@@ -567,7 +595,7 @@
 		E29159591C7642BB00852C2B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "$(SRCROOT)/VersionTracker Demo iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/iOS Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tbaranes.VersionTracking;
@@ -575,34 +603,10 @@
 			};
 			name = Release;
 		};
-		E291595B1C7642BB00852C2B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = VersionTrackingTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tbaranes.VersionTrackingTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VersionTracking.app/VersionTracking";
-			};
-			name = Debug;
-		};
-		E291595C1C7642BB00852C2B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = VersionTrackingTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tbaranes.VersionTrackingTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VersionTracking.app/VersionTracking";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E2712F941C7654AD0003B6BA /* Build configuration list for PBXNativeTarget "VersionTracker Demo OSX" */ = {
+		E2712F941C7654AD0003B6BA /* Build configuration list for PBXNativeTarget "macOS Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2712F951C7654AD0003B6BA /* Debug */,
@@ -611,7 +615,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2712FA71C7654C00003B6BA /* Build configuration list for PBXNativeTarget "VersionTracker Demo tvOS" */ = {
+		E2712FA71C7654C00003B6BA /* Build configuration list for PBXNativeTarget "tvOS Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2712FA81C7654C00003B6BA /* Debug */,
@@ -620,7 +624,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E29159351C7642BB00852C2B /* Build configuration list for PBXProject "VersionTrackerDemo" */ = {
+		E29159351C7642BB00852C2B /* Build configuration list for PBXProject "VersionTracker Examples" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E29159551C7642BB00852C2B /* Debug */,
@@ -629,20 +633,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E29159571C7642BB00852C2B /* Build configuration list for PBXNativeTarget "VersionTracker Demo iOS" */ = {
+		E29159571C7642BB00852C2B /* Build configuration list for PBXNativeTarget "iOS Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E29159581C7642BB00852C2B /* Debug */,
 				E29159591C7642BB00852C2B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E291595A1C7642BB00852C2B /* Build configuration list for PBXNativeTarget "VersionTrackingTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E291595B1C7642BB00852C2B /* Debug */,
-				E291595C1C7642BB00852C2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

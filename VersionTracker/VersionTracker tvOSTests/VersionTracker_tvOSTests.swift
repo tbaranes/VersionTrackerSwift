@@ -1,15 +1,15 @@
 //
-//  VersionTrackingTests.swift
-//  VersionTrackingTests
+//  VersionTracker_tvOSTests.swift
+//  VersionTracker tvOSTests
 //
-//  Created by Tom Baranes on 18/02/16.
+//  Created by Tom Baranes on 25/06/16.
 //  Copyright © 2016 Tom Baranes. All rights reserved.
 //
 
 import XCTest
-@testable import VersionTracking
+@testable import VersionTracker_tvOS
 
-class VersionTrackingTests: XCTestCase {
+class VersionTracker_tvOSTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -28,7 +28,7 @@ class VersionTrackingTests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }
