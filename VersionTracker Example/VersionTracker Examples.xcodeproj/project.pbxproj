@@ -183,13 +183,13 @@
 		E2A493FD1D1E8EC500B64677 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E2A494071D1E8EC500B64677 /* VersionTracker.framework */,
+				E2A494071D1E8EC500B64677 /* VersionTrackerSwift.framework */,
 				E2A494091D1E8EC500B64677 /* VersionTracker iOS Tests.xctest */,
-				E2A4940B1D1E8EC500B64677 /* VersionTracker.framework */,
+				E2A4940B1D1E8EC500B64677 /* VersionTrackerSwift.framework */,
 				E2A4940D1D1E8EC500B64677 /* VersionTracker macOSTests.xctest */,
-				E2A4940F1D1E8EC500B64677 /* VersionTracker.framework */,
+				E2A4940F1D1E8EC500B64677 /* VersionTrackerSwift.framework */,
 				E2A494111D1E8EC500B64677 /* VersionTracker tvOSTests.xctest */,
-				E2A494131D1E8EC500B64677 /* VersionTracker.framework */,
+				E2A494131D1E8EC500B64677 /* VersionTrackerSwift.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -254,7 +254,7 @@
 		E29159321C7642BB00852C2B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Tom Baranes";
 				TargetAttributes = {
@@ -263,9 +263,13 @@
 					};
 					E2712F9A1C7654C00003B6BA = {
 						CreatedOnToolsVersion = 7.2.1;
+						ProvisioningStyle = Manual;
 					};
 					E29159391C7642BB00852C2B = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = TNVENL2JX3;
+						DevelopmentTeamName = Recisio;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -296,10 +300,10 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		E2A494071D1E8EC500B64677 /* VersionTracker.framework */ = {
+		E2A494071D1E8EC500B64677 /* VersionTrackerSwift.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = VersionTracker.framework;
+			path = VersionTrackerSwift.framework;
 			remoteRef = E2A494061D1E8EC500B64677 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -310,10 +314,10 @@
 			remoteRef = E2A494081D1E8EC500B64677 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E2A4940B1D1E8EC500B64677 /* VersionTracker.framework */ = {
+		E2A4940B1D1E8EC500B64677 /* VersionTrackerSwift.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = VersionTracker.framework;
+			path = VersionTrackerSwift.framework;
 			remoteRef = E2A4940A1D1E8EC500B64677 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -324,10 +328,10 @@
 			remoteRef = E2A4940C1D1E8EC500B64677 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E2A4940F1D1E8EC500B64677 /* VersionTracker.framework */ = {
+		E2A4940F1D1E8EC500B64677 /* VersionTrackerSwift.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = VersionTracker.framework;
+			path = VersionTrackerSwift.framework;
 			remoteRef = E2A4940E1D1E8EC500B64677 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -338,10 +342,10 @@
 			remoteRef = E2A494101D1E8EC500B64677 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E2A494131D1E8EC500B64677 /* VersionTracker.framework */ = {
+		E2A494131D1E8EC500B64677 /* VersionTrackerSwift.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = VersionTracker.framework;
+			path = VersionTrackerSwift.framework;
 			remoteRef = E2A494121D1E8EC500B64677 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
