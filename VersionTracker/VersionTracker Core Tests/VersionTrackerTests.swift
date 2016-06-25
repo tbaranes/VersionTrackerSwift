@@ -7,7 +7,12 @@
 //
 
 import XCTest
+@testable import VersionTrackerSwift
 
 class VersionTrackerTests: XCTestCase {
+
+}
+
+extension VersionTrackerTests {
 
 }
