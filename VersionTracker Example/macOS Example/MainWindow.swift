@@ -24,7 +24,6 @@ class MainWindow: NSWindow {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Do any additional setup after loading the view, typically from a nib.
         labelVersion.stringValue = "Current version: " + VersionTracker.currentVersion()
         labelBuild.stringValue = "Current build: " + VersionTracker.currentBuild()
         labelVersionHistory.stringValue = "Version history: " + VersionTracker.versionHistory().description
@@ -40,7 +39,7 @@ class MainWindow: NSWindow {
             labelPreviousBuild.stringValue = "Previous build: " + previousBuild
         } else {
             labelPreviousBuild.stringValue = "Previous build: first build"
-        }
+        }    
     }
 
 }

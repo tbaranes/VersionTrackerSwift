@@ -20,6 +20,9 @@
 		E29159431C7642BB00852C2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29159411C7642BB00852C2B /* Main.storyboard */; };
 		E29159451C7642BB00852C2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E29159441C7642BB00852C2B /* Assets.xcassets */; };
 		E29159481C7642BB00852C2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29159461C7642BB00852C2B /* LaunchScreen.storyboard */; };
+		E2FE73091D200B93000B5458 /* VersionTrackerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A494071D1E8EC500B64677 /* VersionTrackerSwift.framework */; };
+		E2FE730A1D200B97000B5458 /* VersionTrackerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A4940B1D1E8EC500B64677 /* VersionTrackerSwift.framework */; };
+		E2FE730B1D200B9D000B5458 /* VersionTrackerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A4940F1D1E8EC500B64677 /* VersionTrackerSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2FE730A1D200B97000B5458 /* VersionTrackerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2FE730B1D200B9D000B5458 /* VersionTrackerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2FE73091D200B93000B5458 /* VersionTrackerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
