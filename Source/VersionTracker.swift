@@ -42,7 +42,7 @@ public struct VersionTracker {
     static var sharedInstance = VersionTracker()
 
     private init() {
-        if let versionHistory = UserDefaults.standard().dictionary(forKey: kUserDefaultsVersionHistory) as? [String: [String]] {
+        if let versionHistory = UserDefaults.standard.dictionary(forKey: kUserDefaultsVersionHistory) as? [String: [String]] {
             versions = versionHistory
         } else {
             versions = [kVersionsKey: [String](), kBuildsKey: [String]()]
@@ -87,7 +87,7 @@ public struct VersionTracker {
     // MARK: - Version
     
     public static func currentVersion() -> String {
-        let currentVersion = Bundle.main().objectForInfoDictionaryKey("CFBundleShortVersionString")
+        let currentVersion = Bundle.main.objectForInfoDictionaryKey("CFBundleShortVersionString")
         if let version = currentVersion as? String {
             return version
         }
@@ -108,7 +108,7 @@ public struct VersionTracker {
     // MARK: - Build
     
     public static func currentBuild() -> String {
-        let currentVersion = Bundle.main().objectForInfoDictionaryKey(kCFBundleVersionKey as String)
+        let currentVersion = Bundle.main.objectForInfoDictionaryKey(kCFBundleVersionKey as String)
         if let version = currentVersion as? String {
             return version
         }
@@ -136,8 +136,8 @@ private extension VersionTracker {
         updateFirstLaunchForVersion()
         updateFirstLaunchForBuild()
         if firstLaunchForVersion || firstLaunchForBuild {
-            UserDefaults.standard().set(versions, forKey: kUserDefaultsVersionHistory)
-            UserDefaults.standard().synchronize()
+            UserDefaults.standard.set(versions, forKey: kUserDefaultsVersionHistory)
+            UserDefaults.standard.synchronize()
         }
     }
     
