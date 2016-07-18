@@ -66,7 +66,7 @@ public struct VersionTracker {
             isFirstVersion = sharedInstance.historyContainsVersion(version: version)
         }
         
-        if let closure = firstLaunch where isFirstVersion == true{
+        if let closure = firstLaunch, isFirstVersion == true{
             closure()
         }
         return isFirstVersion
@@ -78,7 +78,7 @@ public struct VersionTracker {
             isFirstBuild = sharedInstance.historyContainsBuild(build: build)
         }
         
-        if let closure = firstLaunch where isFirstBuild == true {
+        if let closure = firstLaunch, isFirstBuild == true {
             closure()
         }
         return isFirstBuild
@@ -174,14 +174,14 @@ private extension VersionTracker {
     }
     
     private func previousBuild() -> String? {
-        guard let versionsHistory = versions[kVersionsKey] where versionsHistory.count >= 2 else {
+        guard let versionsHistory = versions[kVersionsKey], versionsHistory.count >= 2 else {
             return nil
         }
         return versionsHistory[versionsHistory.count - 2]
     }
     
     private func previousVersion() -> String? {
-        guard let buildsHistory = versions[kBuildsKey] where buildsHistory.count >= 2 else {
+        guard let buildsHistory = versions[kBuildsKey], buildsHistory.count >= 2 else {
             return nil
         }
         return buildsHistory[buildsHistory.count - 2]

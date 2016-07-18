@@ -427,6 +427,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = TNVENL2JX3;
 						DevelopmentTeamName = Recisio;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					E2D4BF311D1E878F007A4E68 = {
@@ -440,6 +441,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = TNVENL2JX3;
 						DevelopmentTeamName = Recisio;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					E2D4BF541D1E8843007A4E68 = {
@@ -453,6 +455,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = TNVENL2JX3;
 						DevelopmentTeamName = Recisio;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					E2D4BF701D1E8894007A4E68 = {
