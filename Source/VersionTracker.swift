@@ -87,7 +87,7 @@ public struct VersionTracker {
     // MARK: - Version
     
     public static func currentVersion() -> String {
-        let currentVersion = Bundle.main.objectForInfoDictionaryKey("CFBundleShortVersionString")
+        let currentVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString")
         if let version = currentVersion as? String {
             return version
         }
@@ -108,7 +108,7 @@ public struct VersionTracker {
     // MARK: - Build
     
     public static func currentBuild() -> String {
-        let currentVersion = Bundle.main.objectForInfoDictionaryKey(kCFBundleVersionKey as String)
+        let currentVersion = Bundle.main.object(forInfoDictionaryKey: kCFBundleVersionKey as String)
         if let version = currentVersion as? String {
             return version
         }
