@@ -32,10 +32,10 @@ public struct VersionTracker {
 
     // MARK: Private properties
 
-    private var versions: [String: [String]]
-    private var firstLaunchEver: Bool = false
-    private var firstLaunchForVersion: Bool = false
-    private var firstLaunchForBuild: Bool = false
+    fileprivate var versions: [String: [String]]
+    fileprivate var firstLaunchEver: Bool = false
+    fileprivate var firstLaunchForVersion: Bool = false
+    fileprivate var firstLaunchForBuild: Bool = false
 
     // MARK: Singleton
 
@@ -128,7 +128,7 @@ public struct VersionTracker {
 
 }
 
-private extension VersionTracker {
+fileprivate extension VersionTracker {
     
     // MARK: - Initializer
     
@@ -159,28 +159,28 @@ private extension VersionTracker {
     
     // MARK: - Helper
     
-    private func historyContainsVersion(version: String) -> Bool {
+    func historyContainsVersion(version: String) -> Bool {
         guard let versionsHistory = versions[kVersionsKey] else {
             return false
         }
         return versionsHistory.contains(version)
     }
     
-    private func historyContainsBuild(build: String) -> Bool {
+    func historyContainsBuild(build: String) -> Bool {
         guard let buildHistory = versions[kBuildsKey] else {
             return false
         }
         return buildHistory.contains(build)
     }
     
-    private func previousBuild() -> String? {
+    func previousBuild() -> String? {
         guard let versionsHistory = versions[kVersionsKey], versionsHistory.count >= 2 else {
             return nil
         }
         return versionsHistory[versionsHistory.count - 2]
     }
     
-    private func previousVersion() -> String? {
+    func previousVersion() -> String? {
         guard let buildsHistory = versions[kBuildsKey], buildsHistory.count >= 2 else {
             return nil
         }
