@@ -27,7 +27,7 @@ private let kVersionsKey = "kVTVersions"
 private let kBuildsKey = "kVTBuilds"
 
 public struct VersionTracker {
-    
+
     public typealias FirstLaunch = () -> Void
 
     // MARK: Private properties
@@ -51,41 +51,41 @@ public struct VersionTracker {
     }
 
     // MARK: - Tracker
-    
+
     public static func track() {
         sharedInstance.startTracking()
     }
-    
+
     public static func isFirstLaunchEver() -> Bool {
         return sharedInstance.firstLaunchEver
     }
-    
+
     public static func isFirstLaunch(forVersion version: String = "", firstLaunch: FirstLaunch? = nil) -> Bool {
         var isFirstVersion = sharedInstance.firstLaunchForVersion
         if version != "" {
             isFirstVersion = sharedInstance.historyContainsVersion(version: version)
         }
-        
-        if let closure = firstLaunch, isFirstVersion == true{
+
+        if let closure = firstLaunch, isFirstVersion == true {
             closure()
         }
         return isFirstVersion
     }
-    
+
     public static func isFirstLaunch(forBuild build: String = "", firstLaunch: FirstLaunch? = nil) -> Bool {
         var isFirstBuild = sharedInstance.firstLaunchForBuild
         if build != "" {
             isFirstBuild = sharedInstance.historyContainsBuild(build: build)
         }
-        
+
         if let closure = firstLaunch, isFirstBuild == true {
             closure()
         }
         return isFirstBuild
     }
-    
+
     // MARK: - Version
-    
+
     public static func currentVersion() -> String {
         let currentVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString")
         if let version = currentVersion as? String {
@@ -97,16 +97,16 @@ public struct VersionTracker {
     public static func previousVersion() -> String? {
         return sharedInstance.previousVersion()
     }
-    
+
     public static func versionHistory() -> [String] {
         guard let versionHistory = sharedInstance.versions[kVersionsKey] else {
             return []
         }
         return versionHistory
     }
-    
+
     // MARK: - Build
-    
+
     public static func currentBuild() -> String {
         let currentVersion = Bundle.main.object(forInfoDictionaryKey: kCFBundleVersionKey as String)
         if let version = currentVersion as? String {
@@ -114,11 +114,11 @@ public struct VersionTracker {
         }
         return ""
     }
-    
+
     public static func previousBuild() -> String? {
         return sharedInstance.previousBuild()
     }
-    
+
     public static func buildHistory() -> [String] {
         guard let buildHistory = sharedInstance.versions[kBuildsKey] else {
             return []
@@ -129,9 +129,9 @@ public struct VersionTracker {
 }
 
 fileprivate extension VersionTracker {
-    
+
     // MARK: - Initializer
-    
+
     mutating func startTracking() {
         updateFirstLaunchForVersion()
         updateFirstLaunchForBuild()
@@ -140,7 +140,7 @@ fileprivate extension VersionTracker {
             UserDefaults.standard.synchronize()
         }
     }
-    
+
     mutating func updateFirstLaunchForVersion() {
         let currentVersion = VersionTracker.currentVersion()
         if versions[kVersionsKey]?.contains(currentVersion) == false {
@@ -148,7 +148,7 @@ fileprivate extension VersionTracker {
             firstLaunchForVersion = true
         }
     }
-    
+
     mutating func updateFirstLaunchForBuild() {
         let currentBuild = VersionTracker.currentBuild()
         if versions[kBuildsKey]?.contains(currentBuild) == false {
@@ -156,36 +156,35 @@ fileprivate extension VersionTracker {
             firstLaunchForBuild = true
         }
     }
-    
+
     // MARK: - Helper
-    
+
     func historyContainsVersion(version: String) -> Bool {
         guard let versionsHistory = versions[kVersionsKey] else {
             return false
         }
         return versionsHistory.contains(version)
     }
-    
+
     func historyContainsBuild(build: String) -> Bool {
         guard let buildHistory = versions[kBuildsKey] else {
             return false
         }
         return buildHistory.contains(build)
     }
-    
+
     func previousBuild() -> String? {
         guard let versionsHistory = versions[kVersionsKey], versionsHistory.count >= 2 else {
             return nil
         }
         return versionsHistory[versionsHistory.count - 2]
     }
-    
+
     func previousVersion() -> String? {
         guard let buildsHistory = versions[kBuildsKey], buildsHistory.count >= 2 else {
             return nil
         }
         return buildsHistory[buildsHistory.count - 2]
     }
-    
-}
 
+}
