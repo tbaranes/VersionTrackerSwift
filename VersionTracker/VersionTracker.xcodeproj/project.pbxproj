@@ -126,19 +126,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E27C4AC71D678F42004FFBA4 /* VersionTracker Core */ = {
+		E27C4AC71D678F42004FFBA4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				E27C4AC81D678F42004FFBA4 /* VersionTracker.swift */,
 			);
-			name = "VersionTracker Core";
+			name = Sources;
 			path = ../Sources;
 			sourceTree = "<group>";
 		};
 		E2D4BF1E1D1E878F007A4E68 = {
 			isa = PBXGroup;
 			children = (
-				E27C4AC71D678F42004FFBA4 /* VersionTracker Core */,
+				E27C4AC71D678F42004FFBA4 /* Sources */,
 				E2D4BF2A1D1E878F007A4E68 /* VersionTracker iOS */,
 				E2D4BF4D1D1E8842007A4E68 /* VersionTracker macOS */,
 				E2D4BF691D1E8893007A4E68 /* VersionTracker tvOS */,
