@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E27C4AC91D678F42004FFBA4 /* VersionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C4AC81D678F42004FFBA4 /* VersionTracker.swift */; };
-		E27C4ACA1D678F42004FFBA4 /* VersionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C4AC81D678F42004FFBA4 /* VersionTracker.swift */; };
-		E27C4ACB1D678F42004FFBA4 /* VersionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C4AC81D678F42004FFBA4 /* VersionTracker.swift */; };
-		E27C4ACC1D678F42004FFBA4 /* VersionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C4AC81D678F42004FFBA4 /* VersionTracker.swift */; };
+		E2A4B6551D84756F005E6710 /* VersionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A4B6541D84756F005E6710 /* VersionTracker.swift */; };
+		E2A4B6561D84756F005E6710 /* VersionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A4B6541D84756F005E6710 /* VersionTracker.swift */; };
+		E2A4B6571D84756F005E6710 /* VersionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A4B6541D84756F005E6710 /* VersionTracker.swift */; };
+		E2A4B6581D84756F005E6710 /* VersionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A4B6541D84756F005E6710 /* VersionTracker.swift */; };
 		E2D4BF2C1D1E878F007A4E68 /* VersionTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D4BF2B1D1E878F007A4E68 /* VersionTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2D4BF331D1E878F007A4E68 /* VersionTrackerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D4BF281D1E878F007A4E68 /* VersionTrackerSwift.framework */; };
 		E2D4BF4F1D1E8842007A4E68 /* VersionTracker macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D4BF4E1D1E8842007A4E68 /* VersionTracker macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -48,7 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E27C4AC81D678F42004FFBA4 /* VersionTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionTracker.swift; sourceTree = "<group>"; };
+		E2A4B6541D84756F005E6710 /* VersionTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionTracker.swift; sourceTree = "<group>"; };
 		E2D4BF281D1E878F007A4E68 /* VersionTrackerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VersionTrackerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D4BF2B1D1E878F007A4E68 /* VersionTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VersionTracker.h; sourceTree = "<group>"; };
 		E2D4BF2D1D1E878F007A4E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,19 +126,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E27C4AC71D678F42004FFBA4 /* Sources */ = {
+		E2A4B6531D84756F005E6710 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E27C4AC81D678F42004FFBA4 /* VersionTracker.swift */,
+				E2A4B6541D84756F005E6710 /* VersionTracker.swift */,
 			);
-			name = Sources;
-			path = ../Sources;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		E2D4BF1E1D1E878F007A4E68 = {
 			isa = PBXGroup;
 			children = (
-				E27C4AC71D678F42004FFBA4 /* Sources */,
+				E2A4B6531D84756F005E6710 /* Source */,
 				E2D4BF2A1D1E878F007A4E68 /* VersionTracker iOS */,
 				E2D4BF4D1D1E8842007A4E68 /* VersionTracker macOS */,
 				E2D4BF691D1E8893007A4E68 /* VersionTracker tvOS */,
@@ -611,7 +610,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E27C4AC91D678F42004FFBA4 /* VersionTracker.swift in Sources */,
+				E2A4B6551D84756F005E6710 /* VersionTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,7 +626,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E27C4ACA1D678F42004FFBA4 /* VersionTracker.swift in Sources */,
+				E2A4B6561D84756F005E6710 /* VersionTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,7 +642,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E27C4ACB1D678F42004FFBA4 /* VersionTracker.swift in Sources */,
+				E2A4B6571D84756F005E6710 /* VersionTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,7 +658,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E27C4ACC1D678F42004FFBA4 /* VersionTracker.swift in Sources */,
+				E2A4B6581D84756F005E6710 /* VersionTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
