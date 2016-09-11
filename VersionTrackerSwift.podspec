@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
 s.name            	= "VersionTrackerSwift"
-s.version          	= "1.0"
+s.version          	= "1.1.0"
 s.summary          	= "Versions tracker for your iOS, OS X, and tvOS app"
 s.description      	= "Versions / builds tracker for your iOS, OS X, and tvOS app. Also useful to get information such as versions / builds history..."
 s.homepage         	= "https://github.com/tbaranes/VersionTrackerSwift"
