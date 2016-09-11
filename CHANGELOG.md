@@ -8,9 +8,23 @@ All notable changes to the project will be documented in this file.
 
 #### API breaking changes
 
+N/A
+
+#### Enhancements
+
+N/A
+
+#### Bugfixes
+
+N/A
+
+## [1.1.0](https://github.com/tbaranes/SwiftyUtils/releases/tag/1.1.0) (17-09-2016)
+
+#### API breaking changes
+
 - Module name `VersionTracking` has been renamed `VersionTrackerSwift`
 - `VersionTracking` has been renamed `VersionTracker`
-- Swift 3 support (currently not merged in master, available using branch `feature/swift3`)
+- Swift 3 support
 - Some APIs have been updated to be more swifty, check out the README for more information
 
 #### Enhancements
