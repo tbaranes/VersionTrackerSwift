@@ -1,7 +1,7 @@
 # VersionTrackerSwift
 
 [![Travis](https://img.shields.io/travis/tbaranes/VersionTrackerSwift.svg)](https://travis-ci.org/tbaranes/VersionTrackerSwift)
-![Language](https://img.shields.io/badge/language-Swift%202.2-orange.svg)
+![Language](https://img.shields.io/badge/language-Swift%203.0-orange.svg)
 [![CocoaPods](https://img.shields.io/cocoapods/v/VersionTrackerSwift.svg?style=flat)](https://github.com/tbaranes/VersionTrackerSwift)
 [![Platform](https://img.shields.io/cocoapods/p/VersionTrackerSwift.svg?style=flat)](http://cocoadocs.org/docsets/VersionTrackerSwift)
 [![License](https://img.shields.io/cocoapods/l/VersionTrackerSwift.svg?style=flat)](http://cocoapods.org/pods/VersionTrackerSwift)
@@ -35,8 +35,8 @@ Then, call whenever one of the following methods to get the data you need:
 
 ```swift
 static func isFirstLaunchEver() -> Bool
-static func isFirstLaunchForVersion(version: String = "", firstLaunch: Firstlaunch? = nil) -> Bool
-static func isFirstLaunchForBuild(build: String = "", firstLaunch: Firstlaunch? = nil) -> Bool
+public static func isFirstLaunch(forVersion version: String = "", firstLaunch: FirstLaunch? = nil) -> Bool
+static func isFirstLaunch(forBuild build: String = "", firstLaunch: FirstLaunch? = nil) -> Bool
 static func currentVersion() -> String
 static func currentBuild() -> String
 static func previousVersion() -> String?
