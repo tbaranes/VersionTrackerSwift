@@ -5,7 +5,6 @@
 [![CocoaPods](https://img.shields.io/cocoapods/v/VersionTrackerSwift.svg?style=flat)](https://github.com/tbaranes/VersionTrackerSwift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Platform](https://img.shields.io/cocoapods/p/VersionTrackerSwift.svg?style=flat)](http://cocoadocs.org/docsets/VersionTrackerSwift)
-[![License](https://img.shields.io/cocoapods/l/VersionTrackerSwift.svg?style=flat)](http://cocoapods.org/pods/VersionTrackerSwift)
 
 VersionTrackerSwift is a versions / builds tracker to know which version has been installed by a user. 
 
@@ -56,17 +55,17 @@ The version and build number are the information you specify in your app's Info.
  
 ## Installation
 
-### Cocoapods Installation
+### CocoaPods
 
-VersionTrackerSwift is available on CocoaPods. Add the following line in your Podfile:
+Add the following line in your Podfile:
 
 ```
 pod 'VersionTrackerSwift'
 ```
 
-### Carthage Installation
+### Carthage
 
-VersionTrackerSwift is compatible with Carthage. Add the following line to your Cartfile:
+Add the following line to your Cartfile:
 
 ```
 github "tbaranes/VersionTrackerSwift"
@@ -86,16 +85,10 @@ let package = Package(
 )
 ```
 
-### Manual Installation
+### Manual
 
 Just drag the `Source/*.swift` files into your project.
  
-
-## What's next
-
-- [ ] Unit tests
-- Your ideas!
-
 ## Contribution
 
 - If you found a **bug**, open an **issue**
