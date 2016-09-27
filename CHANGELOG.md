@@ -8,8 +8,8 @@ All notable changes to the project will be documented in this file.
 
 #### API breaking changes
 
-N/A
-
+- Updating module name: `VersionTrackerSwift` -> `VersionTracker`
+ 
 #### Enhancements
 
 N/A

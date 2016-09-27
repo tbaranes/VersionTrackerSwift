@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import VersionTrackerSwift
+import VersionTracker
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

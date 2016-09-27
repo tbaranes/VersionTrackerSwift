@@ -7,7 +7,7 @@
 //
 
 import Cocoa
-import VersionTrackerSwift
+import VersionTracker
 
 class MainWindow: NSWindow {
 

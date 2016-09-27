@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import VersionTrackerSwift
+import VersionTracker
 
 class ViewController: UIViewController {
 
