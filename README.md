@@ -3,6 +3,7 @@
 [![Travis](https://img.shields.io/travis/tbaranes/VersionTrackerSwift.svg)](https://travis-ci.org/tbaranes/VersionTrackerSwift)
 ![Language](https://img.shields.io/badge/language-Swift%203.0-orange.svg)
 [![CocoaPods](https://img.shields.io/cocoapods/v/VersionTrackerSwift.svg?style=flat)](https://github.com/tbaranes/VersionTrackerSwift)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Platform](https://img.shields.io/cocoapods/p/VersionTrackerSwift.svg?style=flat)](http://cocoadocs.org/docsets/VersionTrackerSwift)
 [![License](https://img.shields.io/cocoapods/l/VersionTrackerSwift.svg?style=flat)](http://cocoapods.org/pods/VersionTrackerSwift)
 
@@ -61,6 +62,14 @@ VersionTrackerSwift is available on CocoaPods. Add the following line in your Po
 
 ```
 pod 'VersionTrackerSwift'
+```
+
+### Carthage Installation
+
+VersionTrackerSwift is compatible with Carthage. Add the following line to your Cartfile:
+
+```
+github "tbaranes/VersionTrackerSwift"
 ```
 
 ### Swift Package Manager
