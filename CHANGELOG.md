@@ -18,6 +18,10 @@ N/A
 
 N/A
 
+## [1.1.1] (https://github.com/tbaranes/VersionTrackerSwift/releases/tag/1.1.0) (27-09-2016)
+
+Added Carthage Support
+
 ## [1.1.0](https://github.com/tbaranes/VersionTrackerSwift/releases/tag/1.1.0) (11-09-2016)
 
 #### API breaking changes
