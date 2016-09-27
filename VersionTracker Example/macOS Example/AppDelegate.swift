@@ -7,7 +7,7 @@
 //
 
 import Cocoa
-import VersionTrackerSwift
+import VersionTracker
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
