@@ -15,12 +15,12 @@
 		E2712FA31C7654C00003B6BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2712FA11C7654C00003B6BA /* Main.storyboard */; };
 		E2712FA51C7654C00003B6BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2712FA41C7654C00003B6BA /* Assets.xcassets */; };
 		E2712FAB1C7658970003B6BA /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2712FAA1C7658970003B6BA /* MainWindow.swift */; };
-		E287964B1D5E568A00B4908D /* VersionTrackerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A494071D1E8EC500B64677 /* VersionTrackerSwift.framework */; };
-		E287964C1D5E568A00B4908D /* VersionTrackerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E2A494071D1E8EC500B64677 /* VersionTrackerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E28796501D5E569300B4908D /* VersionTrackerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A4940B1D1E8EC500B64677 /* VersionTrackerSwift.framework */; };
-		E28796511D5E569300B4908D /* VersionTrackerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E2A4940B1D1E8EC500B64677 /* VersionTrackerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E28796551D5E569B00B4908D /* VersionTrackerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A4940F1D1E8EC500B64677 /* VersionTrackerSwift.framework */; };
-		E28796561D5E569B00B4908D /* VersionTrackerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E2A4940F1D1E8EC500B64677 /* VersionTrackerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E287964B1D5E568A00B4908D /* VersionTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A494071D1E8EC500B64677 /* VersionTracker.framework */; };
+		E287964C1D5E568A00B4908D /* VersionTracker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E2A494071D1E8EC500B64677 /* VersionTracker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E28796501D5E569300B4908D /* VersionTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A4940B1D1E8EC500B64677 /* VersionTracker.framework */; };
+		E28796511D5E569300B4908D /* VersionTracker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E2A4940B1D1E8EC500B64677 /* VersionTracker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E28796551D5E569B00B4908D /* VersionTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A4940F1D1E8EC500B64677 /* VersionTracker.framework */; };
+		E28796561D5E569B00B4908D /* VersionTracker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E2A4940F1D1E8EC500B64677 /* VersionTracker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E291593E1C7642BB00852C2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291593D1C7642BB00852C2B /* AppDelegate.swift */; };
 		E29159401C7642BB00852C2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291593F1C7642BB00852C2B /* ViewController.swift */; };
 		E29159431C7642BB00852C2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29159411C7642BB00852C2B /* Main.storyboard */; };
@@ -108,7 +108,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E287964C1D5E568A00B4908D /* VersionTrackerSwift.framework in Embed Frameworks */,
+				E287964C1D5E568A00B4908D /* VersionTracker.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,7 +119,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E28796511D5E569300B4908D /* VersionTrackerSwift.framework in Embed Frameworks */,
+				E28796511D5E569300B4908D /* VersionTracker.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,7 +130,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E28796561D5E569B00B4908D /* VersionTrackerSwift.framework in Embed Frameworks */,
+				E28796561D5E569B00B4908D /* VersionTracker.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,7 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E28796501D5E569300B4908D /* VersionTrackerSwift.framework in Frameworks */,
+				E28796501D5E569300B4908D /* VersionTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E28796551D5E569B00B4908D /* VersionTrackerSwift.framework in Frameworks */,
+				E28796551D5E569B00B4908D /* VersionTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +181,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E287964B1D5E568A00B4908D /* VersionTrackerSwift.framework in Frameworks */,
+				E287964B1D5E568A00B4908D /* VersionTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,13 +249,13 @@
 		E2A493FD1D1E8EC500B64677 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E2A494071D1E8EC500B64677 /* VersionTrackerSwift.framework */,
+				E2A494071D1E8EC500B64677 /* VersionTracker.framework */,
 				E2A494091D1E8EC500B64677 /* VersionTracker iOS Tests.xctest */,
-				E2A4940B1D1E8EC500B64677 /* VersionTrackerSwift.framework */,
+				E2A4940B1D1E8EC500B64677 /* VersionTracker.framework */,
 				E2A4940D1D1E8EC500B64677 /* VersionTracker macOSTests.xctest */,
-				E2A4940F1D1E8EC500B64677 /* VersionTrackerSwift.framework */,
+				E2A4940F1D1E8EC500B64677 /* VersionTracker.framework */,
 				E2A494111D1E8EC500B64677 /* VersionTracker tvOSTests.xctest */,
-				E2A494131D1E8EC500B64677 /* VersionTrackerSwift.framework */,
+				E2A494131D1E8EC500B64677 /* VersionTracker.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -327,7 +327,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Tom Baranes";
 				TargetAttributes = {
 					E2712F891C7654AD0003B6BA = {
@@ -375,10 +375,10 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		E2A494071D1E8EC500B64677 /* VersionTrackerSwift.framework */ = {
+		E2A494071D1E8EC500B64677 /* VersionTracker.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = VersionTrackerSwift.framework;
+			path = VersionTracker.framework;
 			remoteRef = E2A494061D1E8EC500B64677 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -389,10 +389,10 @@
 			remoteRef = E2A494081D1E8EC500B64677 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E2A4940B1D1E8EC500B64677 /* VersionTrackerSwift.framework */ = {
+		E2A4940B1D1E8EC500B64677 /* VersionTracker.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = VersionTrackerSwift.framework;
+			path = VersionTracker.framework;
 			remoteRef = E2A4940A1D1E8EC500B64677 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -403,10 +403,10 @@
 			remoteRef = E2A4940C1D1E8EC500B64677 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E2A4940F1D1E8EC500B64677 /* VersionTrackerSwift.framework */ = {
+		E2A4940F1D1E8EC500B64677 /* VersionTracker.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = VersionTrackerSwift.framework;
+			path = VersionTracker.framework;
 			remoteRef = E2A4940E1D1E8EC500B64677 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -417,10 +417,10 @@
 			remoteRef = E2A494101D1E8EC500B64677 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E2A494131D1E8EC500B64677 /* VersionTrackerSwift.framework */ = {
+		E2A494131D1E8EC500B64677 /* VersionTracker.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = VersionTrackerSwift.framework;
+			path = VersionTracker.framework;
 			remoteRef = E2A494121D1E8EC500B64677 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -618,8 +618,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -663,8 +665,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
