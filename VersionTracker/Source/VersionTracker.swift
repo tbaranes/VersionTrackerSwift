@@ -22,169 +22,83 @@
 
 import Foundation
 
-private let kUserDefaultsVersionHistory = "kVTVersionHistory"
-private let kVersionsKey = "kVTVersions"
-private let kBuildsKey = "kVTBuilds"
+fileprivate enum DefaultsKeys: String {
+    case history = "kVTVersionHistory"
+    case versions = "kVTVersions"
+    case builds = "kVTBuilds"
+}
 
 public struct VersionTracker {
 
-    public typealias FirstLaunch = () -> Void
-
     // MARK: Private properties
 
-    fileprivate var versions: [String: [String]]
-    fileprivate var firstLaunchEver: Bool = false
-    fileprivate var firstLaunchForVersion: Bool = false
-    fileprivate var firstLaunchForBuild: Bool = false
+    fileprivate var allVersions: [String: [String]]
+    public let isFirstLaunchEver: Bool
+    public let isFirstVersionLaunch: Bool
+    public let isFirstBuildLaunch: Bool
 
     // MARK: Singleton
 
-    static var sharedInstance = VersionTracker()
+    public static var shared = VersionTracker()
 
     private init() {
-        if let versionHistory = UserDefaults.standard.dictionary(forKey: kUserDefaultsVersionHistory) as? [String: [String]] {
-            versions = versionHistory
-        } else {
-            versions = [kVersionsKey: [String](), kBuildsKey: [String]()]
-            firstLaunchEver = true
-        }
-    }
+        let previousVersions = UserDefaults.standard.dictionary(forKey: DefaultsKeys.history.rawValue) as? [String: [String]]
+        allVersions = previousVersions ?? [DefaultsKeys.versions.rawValue: [String](), DefaultsKeys.builds.rawValue: [String]()]
+        isFirstLaunchEver = allVersions[DefaultsKeys.versions.rawValue]!.isEmpty
 
-    // MARK: - Tracker
+        let version = VersionTracker.currentVersion
+        isFirstVersionLaunch = allVersions[DefaultsKeys.versions.rawValue]!.first { $0 == version } == nil
 
-    public static func track() {
-        sharedInstance.startTracking()
-    }
-
-    public static func isFirstLaunchEver() -> Bool {
-        return sharedInstance.firstLaunchEver
-    }
-
-    public static func isFirstLaunch(forVersion version: String = "", firstLaunch: FirstLaunch? = nil) -> Bool {
-        var isFirstVersion = sharedInstance.firstLaunchForVersion
-        if version != "" {
-            isFirstVersion = sharedInstance.historyContainsVersion(version: version)
-        }
-
-        if let closure = firstLaunch, isFirstVersion == true {
-            closure()
-        }
-        return isFirstVersion
-    }
-
-    public static func isFirstLaunch(forBuild build: String = "", firstLaunch: FirstLaunch? = nil) -> Bool {
-        var isFirstBuild = sharedInstance.firstLaunchForBuild
-        if build != "" {
-            isFirstBuild = sharedInstance.historyContainsBuild(build: build)
-        }
-
-        if let closure = firstLaunch, isFirstBuild == true {
-            closure()
-        }
-        return isFirstBuild
-    }
-
-    // MARK: - Version
-
-    public static func currentVersion() -> String {
-        let currentVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString")
-        if let version = currentVersion as? String {
-            return version
-        }
-        return ""
-    }
-
-    public static func previousVersion() -> String? {
-        return sharedInstance.previousVersion()
-    }
-
-    public static func versionHistory() -> [String] {
-        guard let versionHistory = sharedInstance.versions[kVersionsKey] else {
-            return []
-        }
-        return versionHistory
-    }
-
-    // MARK: - Build
-
-    public static func currentBuild() -> String {
-        let currentVersion = Bundle.main.object(forInfoDictionaryKey: kCFBundleVersionKey as String)
-        if let version = currentVersion as? String {
-            return version
-        }
-        return ""
-    }
-
-    public static func previousBuild() -> String? {
-        return sharedInstance.previousBuild()
-    }
-
-    public static func buildHistory() -> [String] {
-        guard let buildHistory = sharedInstance.versions[kBuildsKey] else {
-            return []
-        }
-        return buildHistory
+        let build = VersionTracker.currentBuild
+        isFirstBuildLaunch = allVersions[DefaultsKeys.builds.rawValue]!.first { $0 == build } == nil
     }
 
 }
 
-fileprivate extension VersionTracker {
+// MARK: - Configure
 
-    // MARK: - Initializer
+extension VersionTracker {
 
-    mutating func startTracking() {
-        updateFirstLaunchForVersion()
-        updateFirstLaunchForBuild()
-        if firstLaunchForVersion || firstLaunchForBuild {
-            UserDefaults.standard.set(versions, forKey: kUserDefaultsVersionHistory)
-            UserDefaults.standard.synchronize()
+    public mutating func track() {
+        let currentVersion = VersionTracker.currentVersion
+        let currentBuild = VersionTracker.currentBuild
+        if isFirstVersionLaunch {
+            allVersions[DefaultsKeys.versions.rawValue]?.append(currentVersion)
         }
+        if isFirstBuildLaunch {
+            allVersions[DefaultsKeys.builds.rawValue]?.append(currentBuild)
+        }
+        UserDefaults.standard.set(allVersions, forKey: DefaultsKeys.history.rawValue)
     }
 
-    mutating func updateFirstLaunchForVersion() {
-        let currentVersion = VersionTracker.currentVersion()
-        if versions[kVersionsKey]?.contains(currentVersion) == false {
-            versions[kVersionsKey]?.append(currentVersion)
-            firstLaunchForVersion = true
-        }
+}
+
+// MARK: - History
+
+extension VersionTracker {
+
+    public var versionHistory: [String] {
+        return allVersions[DefaultsKeys.versions.rawValue]!
     }
 
-    mutating func updateFirstLaunchForBuild() {
-        let currentBuild = VersionTracker.currentBuild()
-        if versions[kBuildsKey]?.contains(currentBuild) == false {
-            versions[kBuildsKey]?.append(currentBuild)
-            firstLaunchForBuild = true
-        }
+    public var buildHistory: [String] {
+        return allVersions[DefaultsKeys.builds.rawValue]!
     }
 
-    // MARK: - Helper
+}
 
-    func historyContainsVersion(version: String) -> Bool {
-        guard let versionsHistory = versions[kVersionsKey] else {
-            return false
-        }
-        return versionsHistory.contains(version)
+// MARK: - Current
+
+extension VersionTracker {
+
+    static var currentVersion: String {
+        let currentVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString")
+        return currentVersion as? String ?? ""
     }
 
-    func historyContainsBuild(build: String) -> Bool {
-        guard let buildHistory = versions[kBuildsKey] else {
-            return false
-        }
-        return buildHistory.contains(build)
-    }
-
-    func previousBuild() -> String? {
-        guard let versionsHistory = versions[kVersionsKey], versionsHistory.count >= 2 else {
-            return nil
-        }
-        return versionsHistory[versionsHistory.count - 2]
-    }
-
-    func previousVersion() -> String? {
-        guard let buildsHistory = versions[kBuildsKey], buildsHistory.count >= 2 else {
-            return nil
-        }
-        return buildsHistory[buildsHistory.count - 2]
+    static var currentBuild: String {
+        let currentVersion = Bundle.main.object(forInfoDictionaryKey: kCFBundleVersionKey as String)
+        return currentVersion as? String ?? ""
     }
 
 }
