@@ -9,6 +9,7 @@ All notable changes to the project will be documented in this file.
 #### API breaking changes
 
 - Updating module name: `VersionTrackerSwift` -> `VersionTracker`
+- API cleanup, a few methods have been removed, and modified. Please check out the README to update your app
  
 #### Enhancements
 
@@ -16,7 +17,7 @@ All notable changes to the project will be documented in this file.
 
 #### Bugfixes
 
-N/A
+- `isFirstLanch` for versions and builds are now working as expected
 
 ## [1.1.0](https://github.com/tbaranes/VersionTrackerSwift/releases/tag/1.1.0) (11-09-2016)
 
