@@ -10,21 +10,18 @@ env:
   - LC_CTYPE=en_US.UTF-8
   - LANG=en_US.UTF-8
   - WORKSPACE=VersionTracker.xcworkspace
-  - IOS_FRAMEWORK_SCHEME="VersionTracker iOS"
-  - MACOS_FRAMEWORK_SCHEME="VersionTracker macOS"
-  - TVOS_FRAMEWORK_SCHEME="VersionTracker tvOS"  
-  - WATCHOS_FRAMEWORK_SCHEME="VersionTracker watchOS"
+  - FRAMEWORK_SCHEME="VersionTracker"
   - IOS_SDK=iphonesimulator10.0
   - MACOS_SDK=macosx10.12
   - TVOS_SDK=appletvsimulator10.0
   - WATCHOS_SDK=watchsimulator3.0
   - EXAMPLE_SCHEME="iOS Example"
   matrix:
-    - DESTINATION="OS=10.0,name=iPhone 6S"         SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" BUILD_EXAMPLE="YES"
-    - DESTINATION="OS=10.0,name=iPhone 5"          SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" BUILD_EXAMPLE="YES"
-    - DESTINATION="arch=x86_64"                    SCHEME="$MACOS_FRAMEWORK_SCHEME"   SDK="$OSX_SDK"     RUN_TESTS="YES" BUILD_EXAMPLE="NO"
-    - DESTINATION="OS=10.0,name=Apple TV 1080p"    SCHEME="$TVOS_FRAMEWORK_SCHEME"    SDK="$TVOS_SDK"    RUN_TESTS="YES" BUILD_EXAMPLE="NO"
-    - DESTINATION="OS=3.0,name=Apple Watch - 42mm" SCHEME="$WATCHOS_FRAMEWORK_SCHEME" SDK="$WATCHOS_SDK" RUN_TESTS="NO"  BUILD_EXAMPLE="NO"
+    - DESTINATION="OS=10.0,name=iPhone 6S"         SCHEME="$FRAMEWORK_SCHEME"   SDK="$IOS_SDK"     RUN_TESTS="YES" BUILD_EXAMPLE="YES"
+    - DESTINATION="OS=10.0,name=iPhone 5"          SCHEME="$FRAMEWORK_SCHEME"   SDK="$IOS_SDK"     RUN_TESTS="YES" BUILD_EXAMPLE="YES"
+    - DESTINATION="arch=x86_64"                    SCHEME="$FRAMEWORK_SCHEME"   SDK="$OSX_SDK"     RUN_TESTS="YES" BUILD_EXAMPLE="NO"
+    - DESTINATION="OS=10.0,name=Apple TV 1080p"    SCHEME="$FRAMEWORK_SCHEME"   SDK="$TVOS_SDK"    RUN_TESTS="YES" BUILD_EXAMPLE="NO"
+    - DESTINATION="OS=3.0,name=Apple Watch - 42mm" SCHEME="$FRAMEWORK_SCHEME"   SDK="$WATCHOS_SDK" RUN_TESTS="NO"  BUILD_EXAMPLE="NO"
 script:
   - set -o pipefail
   - xcodebuild -version

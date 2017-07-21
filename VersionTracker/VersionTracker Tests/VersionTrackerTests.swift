@@ -7,9 +7,8 @@
 //
 
 import XCTest
-@testable import VersionTracker
 
-class VersionTrackerTests: XCTestCase {
+final class VersionTrackerTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
@@ -18,9 +17,5 @@ class VersionTrackerTests: XCTestCase {
     override func tearDown() {
         super.tearDown()
     }
-
-}
-
-extension VersionTrackerTests {
 
 }
