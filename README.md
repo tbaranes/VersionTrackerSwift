@@ -15,34 +15,33 @@ VersionTrackerSwift is a versions / builds tracker to know which version has bee
 In your ApplicationDelegate, call the method `track` to track the current version:
 
 ```swift
-	// iOS / tvOS
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        VersionTracker.track()
-        return true
-    }
+// iOS / tvOS
+func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    VersionTracker.track()
+    return true
+}
 ```
 
 ```swift
-	// OS X
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
-        VersionTracker.track()
-        return true        
-    }
-
+// OS X
+func applicationDidFinishLaunching(aNotification: NSNotification) {
+    VersionTracker.track()
+    return true        
+}
 ```
 
 Then, call whenever one of the following methods to get the data you need:
 
 ```swift
-static func isFirstLaunchEver() -> Bool
-public static func isFirstLaunch(forVersion version: String = "", firstLaunch: FirstLaunch? = nil) -> Bool
-static func isFirstLaunch(forBuild build: String = "", firstLaunch: FirstLaunch? = nil) -> Bool
-static func currentVersion() -> String
-static func currentBuild() -> String
-static func previousVersion() -> String?
-static func previousBuild() -> String?
-static func versionHistory() -> [String]
-static func buildHistory() -> [String]
+VersionTracker.shared.track() 
+VersionTracker.shared.isFirstLaunchEver // Bool
+VersionTracker.shared.isFirstVersionLaunch // Bool
+VersionTracker.shared.isFirstBuildLaunch // Bool
+VersionTracker.shared.versionHistory // [String]
+VersionTracker.shared.buildHistory // [String]
+
+VersionTracker.currentVersion // String
+VersionTracker.currentBuild // String
 ```
 
 Check out the examples and play with the version / build / number to have a concrete example.
@@ -69,20 +68,6 @@ Add the following line to your Cartfile:
 
 ```
 github "tbaranes/VersionTrackerSwift"
-```
-
-### Swift Package Manager
-
-VersionTrackerSwift is available on SPM. Just add the following to your Package file:
-
-```swift
-import PackageDescription
-
-let package = Package(
-    dependencies: [
-        .Package(url: "https://github.com/tbaranes/VersionTrackerSwift.git", majorVersion: 1)
-    ]
-)
 ```
 
 ### Manual
