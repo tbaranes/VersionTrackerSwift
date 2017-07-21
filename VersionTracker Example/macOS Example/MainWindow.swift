@@ -23,7 +23,7 @@ class MainWindow: NSWindow {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        VersionTracker.track()
+        VersionTracker.shared.track()
 
         labelVersionHistory.stringValue = "Versions history: " + VersionTracker.shared.versionHistory.description
         labelBuildHistory.stringValue = "Builds history: " + VersionTracker.shared.buildHistory.description
