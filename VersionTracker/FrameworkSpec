@@ -1,0 +1,35 @@
+# Specs to generate and configure xcodeproj
+language = swift("3.0")
+platforms = [
+    macos("10.10"),
+    ios("9.0"),
+    tvos("9.0"),
+    watchos("2.0")
+]
+
+versiontracker_tests = new_target do |target|
+  target.name = "VersionTrackerTests"
+  target.platforms = platforms
+  target.language = language
+  target.info_plist = "Supporting Files/Info.plist"
+  target.bundle_id = "com.recisio.VersionTrackerTests"
+  target.include_files = ["VersionTracker Tests/**/*.swift"]
+  target.type = :unit_test_bundle
+end
+
+versiontracker = new_target do |target|
+  target.name = "VersionTracker"
+  target.platforms = platforms
+  target.language = language
+  target.info_plist = "Supporting Files/Info.plist"
+  target.bundle_id = "com.recisio.VersionTracker"
+  target.header = "Supporting Files/VersionTracker.h"
+  target.include_files = ["../Sources/**/*.swift"]
+  target.test_target = versiontracker_tests
+end
+
+project.name = "VersionTracker"
+project.targets = [
+  versiontracker,
+  versiontracker_tests
+]
