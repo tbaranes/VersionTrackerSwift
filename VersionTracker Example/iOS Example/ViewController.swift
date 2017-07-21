@@ -13,10 +13,9 @@ class ViewController: UIViewController {
 
     // MARK: - Properties
     
-    @IBOutlet weak var labelVersion: UILabel!
-    @IBOutlet weak var labelBuild: UILabel!
-    @IBOutlet weak var labelPreviousVersion: UILabel!
-    @IBOutlet weak var labelPreviousBuild: UILabel!
+    @IBOutlet weak var labelIsFirstLaunchEver: UILabel!
+    @IBOutlet weak var labelIsFirstVersionLaunch: UILabel!
+    @IBOutlet weak var labelIsFirstBuildLaunch: UILabel!
     @IBOutlet weak var labelVersionHistory: UILabel!
     @IBOutlet weak var labelBuildHistory: UILabel!
     
@@ -24,23 +23,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        labelVersion.text = "Current version: " + VersionTracker.currentVersion()
-        labelBuild.text = "Current build: " + VersionTracker.currentBuild()
-        labelVersionHistory.text = "Version history: " + VersionTracker.versionHistory().description
-        labelBuildHistory.text = "Build history: " + VersionTracker.buildHistory().description
+        VersionTracker.shared.track()
 
-        if let previousVersion = VersionTracker.previousVersion() {
-            labelPreviousVersion.text = "Previous version: " + previousVersion
-        } else {
-            labelPreviousVersion.text = "Previous version: first version"
-        }
-
-        if let previousBuild = VersionTracker.previousBuild() {
-            labelPreviousBuild.text = "Previous build: " + previousBuild
-        } else {
-            labelPreviousBuild.text = "Previous build: first build"
-        }
+        labelVersionHistory.text = "Versions history: " + VersionTracker.shared.versionHistory.description
+        labelBuildHistory.text = "Builds history: " + VersionTracker.shared.buildHistory.description
+        labelIsFirstLaunchEver.text = "Is first launch ever: \(VersionTracker.shared.isFirstLaunchEver)"
+        labelIsFirstVersionLaunch.text = "Is first version launch: \(VersionTracker.shared.isFirstVersionLaunch)"
+        labelIsFirstBuildLaunch.text = "Is first build launch: \(VersionTracker.shared.isFirstBuildLaunch)"
     }
     
 }
