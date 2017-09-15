@@ -1,7 +1,7 @@
 # VersionTrackerSwift
 
 [![Travis](https://img.shields.io/travis/tbaranes/VersionTrackerSwift.svg)](https://travis-ci.org/tbaranes/VersionTrackerSwift)
-![Language](https://img.shields.io/badge/language-Swift%203.0-orange.svg)
+![Language](https://img.shields.io/badge/language-Swift%204.0-orange.svg)
 [![CocoaPods](https://img.shields.io/cocoapods/v/VersionTrackerSwift.svg?style=flat)](https://github.com/tbaranes/VersionTrackerSwift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Platform](https://img.shields.io/cocoapods/p/VersionTrackerSwift.svg?style=flat)](http://cocoadocs.org/docsets/VersionTrackerSwift)
@@ -23,7 +23,7 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 ```
 
 ```swift
-// OS X
+// macOS
 func applicationDidFinishLaunching(aNotification: NSNotification) {
     VersionTracker.track()
     return true        
