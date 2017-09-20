@@ -8,9 +8,24 @@ All notable changes to the project will be documented in this file.
 
 #### API breaking changes
 
+N/A
+
+#### Enhancements
+
+N/A
+
+#### Bugfixes
+
+N/A
+
+## [2.0.0](https://github.com/tbaranes/VersionTrackerSwift/releases/tag/2.0.0) (15-09-2017)
+
+#### API breaking changes
+
+- Swift 4 and Xcode 9 support
 - Updating module name: `VersionTrackerSwift` -> `VersionTracker`
 - API cleanup, a few methods have been removed, and modified. Please check out the README to update your app
- 
+
 #### Enhancements
 
 - Officially supporting Carthage
