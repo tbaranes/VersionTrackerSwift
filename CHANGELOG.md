@@ -12,12 +12,18 @@ N/A
 
 #### Enhancements
 
-- Xcode 10 and Swift 4.2 support
-- Xcode 10.2 and Swift 5 support
+N/A
 
 #### Bugfixes
 
 N/A
+
+## [3.0.0](https://github.com/tbaranes/VersionTrackerSwift/releases/tag/3.0.0) (27-03-209)
+
+#### API breaking changes
+
+- Xcode 10 and Swift 4.2 support
+- Xcode 10.2 and Swift 5 support
 
 ## [2.0.0](https://github.com/tbaranes/VersionTrackerSwift/releases/tag/2.0.0) (15-09-2017)
 
