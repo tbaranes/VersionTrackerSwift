@@ -91,12 +91,12 @@ extension VersionTracker {
 
 extension VersionTracker {
 
-    static var currentVersion: String {
+    public static var currentVersion: String {
         let currentVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString")
         return currentVersion as? String ?? ""
     }
 
-    static var currentBuild: String {
+    public static var currentBuild: String {
         let currentVersion = Bundle.main.object(forInfoDictionaryKey: kCFBundleVersionKey as String)
         return currentVersion as? String ?? ""
     }

@@ -12,7 +12,8 @@ N/A
 
 #### Enhancements
 
-N/A
+- Expose `VersionTracker.currentVersion` and `VersionTracker.currentBuild`. They were previously inaccessible due to
+being internal.
 
 #### Bugfixes
 
