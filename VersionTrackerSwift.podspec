@@ -21,5 +21,6 @@ s.watchos.deployment_target = '2.0'
 
 s.requires_arc 	   			= true
 s.source_files				= 'Sources/*.swift'
+s.resource_bundles = {'VersionTrackerSwift' => ['Sources/Resources/PrivacyInfo.xcprivacy']}
 
 end

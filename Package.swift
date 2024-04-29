@@ -9,6 +9,11 @@ let package = Package(
         .library(name: "VersionTracker", targets: ["VersionTracker"])
     ],
     targets: [
-        .target(name: "VersionTracker", path: "Sources"),
+        .target(name: "VersionTracker", 
+                path: "Sources",
+                resources: [
+                    .process("Resources/PrivacyInfo.xcprivacy")
+                ]
+               ),
     ]
 )
