@@ -1,9 +1,6 @@
 # VersionTrackerSwift
 
-[![Travis](https://img.shields.io/travis/tbaranes/VersionTrackerSwift.svg)](https://travis-ci.org/tbaranes/VersionTrackerSwift)
-![Language](https://img.shields.io/badge/language-Swift%204.2-orange.svg)
-[![CocoaPods](https://img.shields.io/cocoapods/v/VersionTrackerSwift.svg?style=flat)](https://github.com/tbaranes/VersionTrackerSwift)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+![Language](https://img.shields.io/badge/language-Swift%205.10-orange.svg)
 [![Platform](https://img.shields.io/cocoapods/p/VersionTrackerSwift.svg?style=flat)](http://cocoadocs.org/docsets/VersionTrackerSwift)
 
 VersionTrackerSwift is a versions / builds tracker to know which version has been installed by a user. 
@@ -51,24 +48,6 @@ Check out the examples and play with the version / build / number to have a conc
 Each time you call the method `track`, the version and build are stored in `NSUserDefaults` if a new version / build is detected. Then, you can access to any information from the tracker.
 
 The version and build number are the information you specify in your app's Info.plist.
- 
-## Installation
-
-### CocoaPods
-
-Add the following line in your Podfile:
-
-```
-pod 'VersionTrackerSwift'
-```
-
-### Carthage
-
-Add the following line to your Cartfile:
-
-```
-github "tbaranes/VersionTrackerSwift"
-```
 
 ### Manual
 

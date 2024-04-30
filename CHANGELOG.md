@@ -12,14 +12,22 @@ N/A
 
 #### Enhancements
 
-- Expose `VersionTracker.currentVersion` and `VersionTracker.currentBuild`. They were previously inaccessible due to
-being internal.
+N/A
+
 
 #### Bugfixes
 
 N/A
 
-## [3.0.0](https://github.com/tbaranes/VersionTrackerSwift/releases/tag/3.0.0) (27-03-209)
+## [3.1.0](https://github.com/tbaranes/VersionTrackerSwift/releases/tag/3.1.0) (30-04-2024)
+
+#### Enhancements
+
+- Add private manifest file (PrivacyInfo.xcprivacy) to the project to meet Apple's requirement.
+- Expose `VersionTracker.currentVersion` and `VersionTracker.currentBuild`. They were previously inaccessible due to
+being internal.
+
+## [3.0.0](https://github.com/tbaranes/VersionTrackerSwift/releases/tag/3.0.0) (27-03-2019)
 
 #### API breaking changes
 
